@@ -1,1371 +1,1657 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
-		<meta name="description" content="">
-		<meta name="keywords" content="">
-		<meta name="theme-color" content="">
-		<meta name="viewport"
-			content="width=device-width, user-scalable=no, initial-scale=1.0,
-			maximum-scale=1.0, minimum-scale=1.0">
-		<!-- favicon -->
-		<link rel="icon"
-			href="https://pgbonus.ru/favicon.ico">
-		<meta name="msapplication-TileColor" content="#603cba">
-		<meta name="theme-color" content="#ffffff">
-		<!-- /favicon -->
-		<link rel="stylesheet" href="styles/main.css">
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
-			/>
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
-			/>
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-			/>
-	</head>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="theme-color" content="">
+        <meta name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0,
+            maximum-scale=1.0, minimum-scale=1.0">
+        <!-- favicon -->
+        <link rel="icon"
+            href="https://pgbonus.ru/favicon.ico">
+        <meta name="msapplication-TileColor" content="#603cba">
+        <meta name="theme-color" content="#ffffff">
+        <!-- /favicon -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+            />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+            />
+    </head>
 
-	<body class="content">
-		<!-- global-header -->
-		<header>
-    <div class="header-top">
-        <div class="container">
-            <div class="header-top__row">
-                <div class="header-top__item">
-                    <div class="header-top__column">
-                        <img src="/img/header-top-1.png" alt="">
-                    </div>
-                    <div class="header-top__column">
-                        <span>«Лучшее предприятие отрасли 2020»</span>
-                        <p>Участие в номинации</p>
-                    </div>
+    <body class="content">
+        <!-- global-header -->
+        <header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="header-top__row">
+                        <div class="header-top__item">
+                            <div class="header-top__column">
+                                <img src="img/header-top-1.png" alt="">
+                            </div>
+                            <div class="header-top__column">
+                                <span>«Лучшее предприятие отрасли 2020»</span>
+                                <p>Участие в номинации</p>
+                            </div>
 
-                </div>
-                <div class="header-top__item">
-                    <div class="header-top__column">
-                        <img src="/img/header-top-2.png" alt="">
-                    </div>
-                    <div class="header-top__column">
-                        <span>Сертификация </span>
-                        <p class="blue-c">Grundfos</p>
-                    </div>
-                </div>
-                <div class="header-top__item">
-                    <div class="header-top__column">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div class="header-top__column">
-                        <span class="span-b fz-default">ООО "ЛИМИШ"</span>
-                        <span class="span-r fz-default">- Московская обл, г.
-                            Долгопрудный,пр.
-                            Пацаева 7, корп 1</span>
-                    </div>
-                </div>
-                <div class="header-top__item">
-                    <div class="header-top__column">
-                        <i class="fas fa-envelope"></i>
-                    </div>
-                    <div class="header-top__column">
-                        <p><a href="mailto:infovodosnab@mail.ru">infovodosnab@mail.ru</a></p>
-                    </div>
-                </div>
-                <div class="header-top__item">
-                    <div class="header-top__column">
-                        <img src="/img/icons8-square-clock-30.png" alt="">
-                    </div>
-                    <div class="header-top__column">
-                        <p class="fz-default">с 9:00 - 21:00</p>
-                        <span class="span-r fz-default">без выходных</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-middle">
-        <div class="container">
-            <div class="header-middle__row">
-                <div class="header-middle__item">
-                    <div class="burger"></div>
-                </div>
-                <div class="header-middle__item">
-                    <div class="header-middle__logo">
-                        <img src="/img/logo-vodosnab.png" alt="">
-                    </div>
-                </div>
-                <div class="header-middle__item">
-                    <div class="header-middle__search">
-                        <form class="header-middle__form search-form"
-                            id="searchform"
-                            role="search" method="get" action="/">
-                            <input class="header-middle__input
-                                header-middle__input_text
-                                search-form__input" placeholder="Поиск..."
-                                type="text" name="s" value="" size="15"
-                                autocomplete="off" maxlength="100">
-                            <label class="header-middle__wrap">
-                                <i class="header-middle__icon fas
-                                    fa-align-left"></i>
-                                <input class="header-middle__submit
-                                    header-middle__input" id="searchsubmit"
-                                    type="submit" value="Поиск">
-                            </label>
-                            <ul class="ajax-search"></ul>
-                        </form>
-                    </div>
-                </div>
-                <div class="header-middle__item">
-                    <div class="header-middle__cart">
-                        <img src="/img/icons8-shopping-cart-48.png" alt="">
-                    </div>
-                    <div class="header-middle__cart">
-                        <div class="header-middle__cart-title">Корзина</div>
-                        <div class="header-middle__cart-count">1 товар</div>
-                    </div>    
-                </div>
-                <div class="header-middle__item">
-                    <div class="header-middle__phone">
-                        <div class="header-middle__phone_title">
-                            Телефоны:
                         </div>
-                        <div class="header-middle__phone_link">
-                            <a href="tel:+7 (926) 890 34 22"><img
-                                    src="/img/icons8-call-24.png" alt="">+7
-                                (926) 890 34 22
-                            </a>
-                            <a href="tel:8 (916) 269 52 76"><img
-                                    src="/img/icons8-call-24.png" alt="">8 (916)
-                                269 52 76
-                            </a>
+                        <div class="header-top__item">
+                            <div class="header-top__column">
+                                <img src="img/header-top-2.png" alt="">
+                            </div>
+                            <div class="header-top__column">
+                                <span>Сертификация </span>
+                                <p class="blue-c">Grundfos</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="header-middle__item">
-                    <div class="header-middle__btn">
-                        <a href="/"><button>Заказать звонок</button></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="header-bottom">
-        <div class="container">
-            <div class="header-bottom__row">
-                <nav></nav>
-            </div>
-        </div>
-    </div>
-</header>
-
-		<!-- /global-header-->
-		<!-- slider -->
-		<section class="slider test">
-    <div class="container">
-        <div class="slider__row">
-        <div id="slider-start" class="slider__column">
-            <div class="slider__item">
-                <div class="slider__box">
-                    <div class="slider__title animated" data-animation-in="fadeInRight" data-delay-in="0.2">
-                        <div class="slider__title_wrapper">
-                            <span>Полный комплекс услуг по обустройству</span>
-                            скважин на воду
+                        <div class="header-top__item">
+                            <div class="header-top__column">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="header-top__column">
+                                <span class="span-b fz-default">ООО "ЛИМИШ"</span>
+                                <span class="span-r fz-default">- Московская
+                                    обл, г.
+                                    Долгопрудный,пр.
+                                    Пацаева 7, корп 1</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider__bg">
-                        <div class="slider__bg_white"></div>
-                        <div class="slider__bg_img">
-                            <img class="animated" data-animation-in="zoomInImage" src="/img/slider-img-01.png" alt="">
+                        <div class="header-top__item">
+                            <div class="header-top__column">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="header-top__column">
+                                <p><a href="mailto:infovodosnab@mail.ru">infovodosnab@mail.ru</a></p>
+                            </div>
+                        </div>
+                        <div class="header-top__item">
+                            <div class="header-top__column">
+                                <img src="img/icons8-square-clock-30.png"
+                                    alt="">
+                            </div>
+                            <div class="header-top__column">
+                                <p class="fz-default">с 9:00 - 21:00</p>
+                                <span class="span-r fz-default">без выходных</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="slider__item">
-                <div class="slider__box">
-                    <div class="slider__title animated" data-animation-in="fadeInRight" data-delay-in="0.2">
-                        <div class="slider__title_wrapper">
-                            <span>Второй</span> слайдер
+            <div class="header-middle">
+                <div class="container">
+                    <div class="header-middle__row">
+                        <div class="header-middle__item">
+                            <div class="burger"></div>
                         </div>
-                    </div>
-                    <div class="slider__bg">
-                        <div class="slider__bg_white"></div>
-                        <div class="slider__bg_img">
-                            <img class="animated" data-animation-in="zoomInImage" src="/img/slider-img-01.png" alt="">
+                        <div class="header-middle__item">
+                            <div class="header-middle__logo">
+                                <img src="img/logo-vodosnab.png" alt="">
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slider__item">
-                <div class="slider__box">
-                    <div class="slider__title animated" data-animation-in="fadeInRight" data-delay-in="0.2">
-                        <div class="slider__title_wrapper">
-                            <span>Третий</span> слайдер
+                        <div class="header-middle__item">
+                            <div class="header-middle__search">
+                                <form class="header-middle__form search-form"
+                                    id="searchform"
+                                    role="search" method="get" action="/">
+                                    <input class="header-middle__input
+                                        header-middle__input_text
+                                        search-form__input"
+                                        placeholder="Поиск..."
+                                        type="text" name="s" value="" size="15"
+                                        autocomplete="off" maxlength="100">
+                                    <label class="header-middle__wrap">
+                                        <i class="header-middle__icon fas
+                                            fa-align-left"></i>
+                                        <input class="header-middle__submit
+                                            header-middle__input"
+                                            id="searchsubmit"
+                                            type="submit" value="Поиск">
+                                    </label>
+                                    <ul class="ajax-search"></ul>
+                                </form>
+                            </div>
                         </div>
-                    </div>
-                    <div class="slider__bg">
-                        <div class="slider__bg_white"></div>
-                        <div class="slider__bg_img">
-                            <img class="animated" data-animation-in="zoomInImage" src="/img/slider-img-01.png" alt="">
+                        <div class="header-middle__item">
+                            <div class="header-middle__cart">
+                                <img src="img/icons8-shopping-cart-48.png"
+                                    alt="">
+                            </div>
+                            <div class="header-middle__cart">
+                                <div class="header-middle__cart-title">Корзина</div>
+                                <div class="header-middle__cart-count">1 товар</div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="slide-m-dots"></div>
-        <div class="slider__column">
-            <div class="slider__calculate">
-                <form action="">
-                    <div class="slider__calculate-title">Узнайте за 5 минут стоимость работ в вашем районе</div>
-                    <input type="text" placeholder="+7 (000) 000-00-00"
-                        class="slider__calculate-input">
-                    <input type="submit" value="Рассчитать стоимость"
-                        class="slider__calculate-submit">
-                    <div class="slider__calculate-pd">Нажимая на кнопку, вы
-                        соглашаетесь с обработкой <a href="#">персональных
-                            данных</a></div>
-                </form>
-            </div>
-            <div class="slider__buttons">
-                <div class="slider__btn">
-                    <button>
-                        <img src="../../../img/icons8-ruble-50.png" alt="">
-                    </button>
-                    <a href="" target="_blank">
-                        <span>Скачать прайс-лист</span>
-                    </a>
-                </div>
-                <div class="slider__btn">
-                    <button>
-                        <img src="../../../img/icons8-list-view-50.png" alt="">
-                    </button>
-                    <a href="" target="_blank">
-                        <span>Скачать договор</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </div>
-</section>
-		<!-- /slider-->
-		<section class="services">
-			<div class="container">
-				<div class="services__title">Наши услуги</div>
-				<div class="services__row">
-					<div class="services__item">
-						<div class="services__card">
-							<div class="services__card-title">Обустройство скважин</div>
-							<div class="services__card-img">
-								<img src="/img/card-img-1.png" alt="">
-							</div>
-							<div class="services__card-pricename">Цена:</div>
-							<div class="services__card-price">
-								<div class="services__card-price-old">от <span>2 200</span> руб.</div>
-								<div class="services__card-price-new">от <span>2 600</span> руб.</div>
-							</div>
-							<div class="services__btncart">
-								<button>Подробнее</button>
-								<div class="services__cart">
-									<i class="fas fa-shopping-cart"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="services__item">
-						<div class="services__card">
-							<div class="services__card-title">Обустройство скважин</div>
-							<div class="services__card-img">
-								<img src="/img/card-img-1.png" alt="">
-							</div>
-							<div class="services__card-pricename">Цена:</div>
-							<div class="services__card-price">
-								<div class="services__card-price-old">от <span>2 200</span> руб.</div>
-								<div class="services__card-price-new">от <span>2 600</span> руб.</div>
-							</div>
-							<div class="services__btncart">
-								<button>Подробнее</button>
-								<div class="services__cart">
-									<i class="fas fa-shopping-cart"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="services__item">
-						<div class="services__card">
-							<div class="services__card-title">Обустройство скважин</div>
-							<div class="services__card-img">
-								<img src="/img/card-img-1.png" alt="">
-							</div>
-							<div class="services__card-pricename">Цена:</div>
-							<div class="services__card-price">
-								<div class="services__card-price-old">от <span>2 200</span> руб.</div>
-								<div class="services__card-price-new">от <span>2 600</span> руб.</div>
-							</div>
-							<div class="services__btncart">
-								<button>Подробнее</button>
-								<div class="services__cart">
-									<i class="fas fa-shopping-cart"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="services__item">
-						<div class="services__card">
-							<div class="services__card-title">Обустройство скважин</div>
-							<div class="services__card-img">
-								<img src="/img/card-img-1.png" alt="">
-							</div>
-							<div class="services__card-pricename">Цена:</div>
-							<div class="services__card-price">
-								<div class="services__card-price-old">от <span>2 200</span> руб.</div>
-								<div class="services__card-price-new">от <span>2 600</span> руб.</div>
-							</div>
-							<div class="services__btncart">
-								<button>Подробнее</button>
-								<div class="services__cart">
-									<i class="fas fa-shopping-cart"></i>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="ajax-load-product">
-					<div class="ajax-load-product__button">
-						<button>Показать еще</button>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="cost">
-			<div class="container">
-				<div class="cost__row">
-					<div class="cost__title">Что входит в стоимость обустройства скважин</div>
-					<div class="cost__block">
-						<div class="cost__column">
-							<div class="cost__label">Эконом</div>
-							<ul class="cost__list">
-								<li>Сборка и монтаж погружного насоса</li>
-								<li>Установка гидроаккумулятора</li>
-								<li>Монтаж и настройка автоматики</li>
-								<li>Установка скважинного адаптера</li>
-								<li>Монтаж высокой или низкой опалубки</li>
-								<li>Подключение дома к скважине (при необходимости)</li>
-								<li>Проведение греющего кабеля (при необходимости)</li>
-							</ul>
-							<div class="cost__bottom">
-								<div class="cost__price">от <span>97 800</span> руб.</div>
-								<div class="cost__btn"><button>Заказать</button></div>
-							</div>
-						</div>
-						<div class="cost__column">
-							<div class="cost__label">стандарт</div>
-							<ul class="cost__list">
-								<li>Сборка и монтаж погружного насоса</li>
-								<li>Установка гидроаккумулятора</li>
-								<li>Монтаж и настройка автоматики</li>
-								<li>Установка скважинного адаптера</li>
-								<li>Монтаж высокой или низкой опалубки</li>
-								<li>Подключение дома к скважине (при необходимости)</li>
-								<li>Проведение греющего кабеля (при необходимости)</li>
-							</ul>
-							<div class="cost__bottom">
-								<div class="cost__price">от <span>97 800</span> руб.</div>
-								<div class="cost__btn"><button>Заказать</button></div>
-							</div>
-						</div>
-						<div class="cost__column">
-							<div class="cost__label">комфорт</div>
-							<ul class="cost__list">
-								<li>Сборка и монтаж погружного насоса</li>
-								<li>Установка гидроаккумулятора</li>
-								<li>Монтаж и настройка автоматики</li>
-								<li>Установка скважинного адаптера</li>
-								<li>Монтаж высокой или низкой опалубки</li>
-								<li>Подключение дома к скважине (при необходимости)</li>
-								<li>Проведение греющего кабеля (при необходимости)</li>
-							</ul>
-							<div class="cost__bottom">
-								<div class="cost__price">от <span>97 800</span> руб.</div>
-								<div class="cost__btn"><button>Заказать</button></div>
-							</div>
-						</div>
-						<div class="cost__column">
-							<div class="cost__label">премиум</div>
-							<ul class="cost__list">
-								<li>Сборка и монтаж погружного насоса</li>
-								<li>Установка гидроаккумулятора</li>
-								<li>Монтаж и настройка автоматики</li>
-								<li>Установка скважинного адаптера</li>
-								<li>Монтаж высокой или низкой опалубки</li>
-								<li>Подключение дома к скважине (при необходимости)</li>
-								<li>Проведение греющего кабеля (при необходимости)</li>
-							</ul>
-							<div class="cost__bottom">
-								<div class="cost__price">от <span>97 800</span> руб.</div>
-								<div class="cost__btn"><button>Заказать</button></div>
-							</div>
-						</div>
-					</div>
-					<div class="cost__title cost__title_left">Немного о Лимиш</div>
-					<div class="cost__about">
-						<div class="cost__about-left">
-							<div class="cost__img">
-								<img src="/img/sert-1.png" alt="">
-								<p>Мы сертифицированны</p>
-								<span><strong>Grundfos</strong></span>
-							</div>
-							<div class="cost__img">
-								<img src="/img/sert-2.png" alt="">
-								<p>Участие в номинации</p>
-								<span><strong>«Лучшая компания»</strong></span>
-							</div>
-						</div>
-						<div class="cost__about-right">
-							<ul>
-								<li>Оплата, <strong>после</strong> завершения работ</li>
-								<li>Возможность выполнения работы <strong>под ключ</strong></li>
-								<li><strong>Предоставляем гарантию</strong> на наши работы</li>
-							</ul>
-							<p>А <strong>также</strong></p>
-							<div class="cost__about-row">
-								<div class="cost__about-item">
-									<div class="cost__about-item-text">2009</div>
-									<div class="cost__about-item-subtext">мы работаем <p>с 2009 года</p></div>
-								</div>
-								<div class="cost__about-item">
-									<div class="cost__about-item-icon"><img src="/img/icons8-shop-50.png"
-											alt=""></div>
-									<div class="cost__about-item-subtext">есть <strong>собственный магазин</strong></div>
-								</div>
-								<div class="cost__about-item">
-									<div class="cost__about-item-icon"><img
-											src="/img/icons8-money-box-50.png" alt=""></div>
-									<div class="cost__about-item-subtext">предлагаем <strong>лучшую цену</strong></div>
-								</div>
-							</div>
-							<div class="cost__about-btn">
-								<button>Подробне о нас</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="reviews">
-			<div class="reviews__row">
-				<div class="reviews__title">
-					Отзывы о нас
-				</div>
-				<div class="reviews__slider">
-					<div class="reviews__item">
-						<div class="reviews__block">
-							<div class="reviews__img">
-								<img src="/img/skvazhinnye-nasosy-150x150.png" alt="">
-							</div>
-							<div class="reviews__name">«Мнение о работе ЛИМИШ по скважине на воду»</div>
-							<div class="reviews__text">
-								<p>Я, председатель СНТ «Ясное» Столбов М.Ю. настоящим выражаю
-									благодарность
-									сотрудникам ООО «ЛЕМИШ» за проведенные работы и восстановленное
-									водоснабжение в поселке. Обращались в марте 2019 года с просьбой
-									восстановления двух артезианских скважин. До них вызывали частников с
-									авито, которые оборвали нам насос. ЛЕМИШ нам насос достал. Вода есть.
-									Обратимся еще, будем рекомендовать.</p>
-								<span>С уважением, Михаил Юрьевич</span>
-							</div>
-						</div>
-					</div>
-					<div class="reviews__item">
-						<div class="reviews__block">
-							<div class="reviews__img">
-								<img src="/img/skvazhinnye-nasosy-150x150.png" alt="">
-							</div>
-							<div class="reviews__name">«Мнение о работе ЛИМИШ по скважине на воду»</div>
-							<div class="reviews__text">
-								<p>Я, председатель СНТ «Ясное» Столбов М.Ю. настоящим выражаю
-									благодарность
-									сотрудникам ООО «ЛЕМИШ» за проведенные работы и восстановленное
-									водоснабжение в поселке. Обращались в марте 2019 года с просьбой
-									восстановления двух артезианских скважин. До них вызывали частников с
-									авито, которые оборвали нам насос. ЛЕМИШ нам насос достал. Вода есть.
-									Обратимся еще, будем рекомендовать.</p>
-								<span>С уважением, Михаил Юрьевич</span>
-							</div>
-						</div>
-					</div>
-					<div class="reviews__item">
-						<div class="reviews__block">
-							<div class="reviews__img">
-								<img src="/img/skvazhinnye-nasosy-150x150.png" alt="">
-							</div>
-							<div class="reviews__name">«Мнение о работе ЛИМИШ по скважине на воду»</div>
-							<div class="reviews__text">
-								<p>Я, председатель СНТ «Ясное» Столбов М.Ю. настоящим выражаю
-									благодарность
-									сотрудникам ООО «ЛЕМИШ» за проведенные работы и восстановленное
-									водоснабжение в поселке. Обращались в марте 2019 года с просьбой
-									восстановления двух артезианских скважин. До них вызывали частников с
-									авито, которые оборвали нам насос. ЛЕМИШ нам насос достал. Вода есть.
-									Обратимся еще, будем рекомендовать.</p>
-								<span>С уважением, Михаил Юрьевич</span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="calc">
-    <div class="container">
-        <div class="calc__column">
-            <div class="calc__title">
-                Калькулятор стоимости обустройства скважины
-            </div>
-            <div class="calc__main">
-                <div class="calc__menu">
-                    <div class="selectboxss">
-                        <div class="selectboxssvalue"><span>Выберите калькулятор<img
-                                    src="/img/icons8-sort-down-50.png"
-                                    class="arrowselect" /></span></div>
-                        <ul class="selectboxssmenu">
-                            <li data-tab="1" class="calc__menu_active
-                                selectoption">С кесоном
-                            </li>
-                            <li data-tab="2" class="selectoption">С адптером
-                            </li>
-                            <li data-tab="3" class="selectoption">Обустройство
-                                Абиссинской скважины</li>
-                            <li data-tab="4" class="selectoption">Обвязка
-                                самоизливной скважины</li>
-                            <li data-tab="5" class="selectoption">Скважины на
-                                песок</li>
-                        </ul>
-                    </div>
-                </div>
-                <div id="spnMoreInfo" class="calc__block tab-active"
-                    data-tab="1">
-                    <form action="" class="calc__form">
-                        <label for="">
-                            Выберите район :
-                            <div class="select-box">
-                                <div class="select-box__current" tabindex="1">
-                                    <div class="select-box__value">
-                                        <input class="select-box__input"
-                                            type="radio" id="select-box-0"
-                                            value="0"
-                                            name="Ben" checked="checked" />
-                                        <p class="select-box__input-text">Не
-                                            выбрано</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input"
-                                            type="radio" id="select-box-1"
-                                            name="Ben" data-check="1"
-                                            checked="checked" />
-                                        <p class="select-box__input-text">Балашихинский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input"
-                                            type="radio" id="select-box-2"
-                                            name="Ben" data-check="2" />
-                                        <p class="select-box__input-text">Волоколамский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input"
-                                            type="radio" id="select-box-3"
-                                            name="Ben" data-check="3" />
-                                        <p class="select-box__input-text">Воскресенский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input"
-                                            type="radio" id="select-box-4"
-                                            name="Ben" data-check="4" />
-                                        <p class="select-box__input-text">Дмитровский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input"
-                                            type="radio" id="select-box-5"
-                                            name="Ben" data-check="5" />
-                                        <p class="select-box__input-text">Домодедовский</p>
-                                    </div>
-                                    <img class="select-box__icon"
-                                        src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
-                                        alt="Arrow
-                                        Icon" aria-hidden="true" />
+                        <div class="header-middle__item">
+                            <div class="header-middle__phone">
+                                <div class="header-middle__phone_title">
+                                    Телефоны:
                                 </div>
-                                <ul class="select-box__list">
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-1"
-                                            aria-hidden="aria-hidden">Балашихинский</label>
+                                <div class="header-middle__phone_link">
+                                    <a href="tel:+7 (926) 890 34 22"><img
+                                            src="img/icons8-call-24.png"
+                                            alt="">+7
+                                        (926) 890 34 22
+                                    </a>
+                                    <a href="tel:8 (916) 269 52 76"><img
+                                            src="img/icons8-call-24.png"
+                                            alt="">8 (916)
+                                        269 52 76
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="header-middle__item">
+                            <div class="header-middle__btn">
+                                <a href="/"><button>Заказать звонок</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-bottom">
+                <div class="container">
+                    <div class="header-bottom__row">
+                        <nav></nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- /global-header-->
+        <!-- slider -->
+        <section class="slider test">
+            <div class="container">
+                <div class="slider__row">
+                    <div id="slider-start" class="slider__column">
+                        <div class="slider__item">
+                            <div class="slider__box">
+                                <div class="slider__title animated"
+                                    data-animation-in="fadeInRight"
+                                    data-delay-in="0.2">
+                                    <div class="slider__title_wrapper">
+                                        <span>Полный комплекс услуг по
+                                            обустройству</span>
+                                        скважин на воду
+                                    </div>
+                                </div>
+                                <div class="slider__bg">
+                                    <div class="slider__bg_white"></div>
+                                    <div class="slider__bg_img">
+                                        <img class="animated"
+                                            data-animation-in="zoomInImage"
+                                            src="img/slider-img-01.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__box">
+                                <div class="slider__title animated"
+                                    data-animation-in="fadeInRight"
+                                    data-delay-in="0.2">
+                                    <div class="slider__title_wrapper">
+                                        <span>Второй</span> слайдер
+                                    </div>
+                                </div>
+                                <div class="slider__bg">
+                                    <div class="slider__bg_white"></div>
+                                    <div class="slider__bg_img">
+                                        <img class="animated"
+                                            data-animation-in="zoomInImage"
+                                            src="img/slider-img-01.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slider__item">
+                            <div class="slider__box">
+                                <div class="slider__title animated"
+                                    data-animation-in="fadeInRight"
+                                    data-delay-in="0.2">
+                                    <div class="slider__title_wrapper">
+                                        <span>Третий</span> слайдер
+                                    </div>
+                                </div>
+                                <div class="slider__bg">
+                                    <div class="slider__bg_white"></div>
+                                    <div class="slider__bg_img">
+                                        <img class="animated"
+                                            data-animation-in="zoomInImage"
+                                            src="img/slider-img-01.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-m-dots"></div>
+                    <div class="slider__column">
+                        <div class="slider__calculate">
+                            <form action="">
+                                <div class="slider__calculate-title">Узнайте за
+                                    5 минут стоимость работ в вашем районе</div>
+                                <input type="text" placeholder="+7 (000)
+                                    000-00-00"
+                                    class="slider__calculate-input">
+                                <input type="submit" value="Рассчитать
+                                    стоимость"
+                                    class="slider__calculate-submit">
+                                <div class="slider__calculate-pd">Нажимая на
+                                    кнопку, вы
+                                    соглашаетесь с обработкой <a href="#">персональных
+                                        данных</a></div>
+                            </form>
+                        </div>
+                        <div class="slider__buttons">
+                            <div class="slider__btn">
+                                <button>
+                                    <img src="../../..img/icons8-ruble-50.png"
+                                        alt="">
+                                </button>
+                                <a href="" target="_blank">
+                                    <span>Скачать прайс-лист</span>
+                                </a>
+                            </div>
+                            <div class="slider__btn">
+                                <button>
+                                    <img
+                                        src="../../..img/icons8-list-view-50.png"
+                                        alt="">
+                                </button>
+                                <a href="" target="_blank">
+                                    <span>Скачать договор</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /slider-->
+        <section class="services">
+            <div class="container">
+                <div class="services__title">Наши услуги</div>
+                <div class="services__row">
+                    <div class="services__item">
+                        <div class="services__card">
+                            <div class="services__card-title">Обустройство
+                                скважин</div>
+                            <div class="services__card-img">
+                                <img src="img/card-img-1.png" alt="">
+                            </div>
+                            <div class="services__card-pricename">Цена:</div>
+                            <div class="services__card-price">
+                                <div class="services__card-price-old">от <span>2
+                                        200</span> руб.</div>
+                                <div class="services__card-price-new">от <span>2
+                                        600</span> руб.</div>
+                            </div>
+                            <div class="services__btncart">
+                                <button>Подробнее</button>
+                                <div class="services__cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__card">
+                            <div class="services__card-title">Обустройство
+                                скважин</div>
+                            <div class="services__card-img">
+                                <img src="img/card-img-1.png" alt="">
+                            </div>
+                            <div class="services__card-pricename">Цена:</div>
+                            <div class="services__card-price">
+                                <div class="services__card-price-old">от <span>2
+                                        200</span> руб.</div>
+                                <div class="services__card-price-new">от <span>2
+                                        600</span> руб.</div>
+                            </div>
+                            <div class="services__btncart">
+                                <button>Подробнее</button>
+                                <div class="services__cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__card">
+                            <div class="services__card-title">Обустройство
+                                скважин</div>
+                            <div class="services__card-img">
+                                <img src="img/card-img-1.png" alt="">
+                            </div>
+                            <div class="services__card-pricename">Цена:</div>
+                            <div class="services__card-price">
+                                <div class="services__card-price-old">от <span>2
+                                        200</span> руб.</div>
+                                <div class="services__card-price-new">от <span>2
+                                        600</span> руб.</div>
+                            </div>
+                            <div class="services__btncart">
+                                <button>Подробнее</button>
+                                <div class="services__cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services__item">
+                        <div class="services__card">
+                            <div class="services__card-title">Обустройство
+                                скважин</div>
+                            <div class="services__card-img">
+                                <img src="img/card-img-1.png" alt="">
+                            </div>
+                            <div class="services__card-pricename">Цена:</div>
+                            <div class="services__card-price">
+                                <div class="services__card-price-old">от <span>2
+                                        200</span> руб.</div>
+                                <div class="services__card-price-new">от <span>2
+                                        600</span> руб.</div>
+                            </div>
+                            <div class="services__btncart">
+                                <button>Подробнее</button>
+                                <div class="services__cart">
+                                    <i class="fas fa-shopping-cart"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ajax-load-product">
+                    <div class="ajax-load-product__button">
+                        <button>Показать еще</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cost">
+            <div class="container">
+                <div class="cost__row">
+                    <div class="cost__title">Что входит в стоимость обустройства
+                        скважин</div>
+                    <div class="cost__block">
+                        <div class="cost__column">
+                            <div class="cost__label">Эконом</div>
+                            <ul class="cost__list">
+                                <li>Сборка и монтаж погружного насоса</li>
+                                <li>Установка гидроаккумулятора</li>
+                                <li>Монтаж и настройка автоматики</li>
+                                <li>Установка скважинного адаптера</li>
+                                <li>Монтаж высокой или низкой опалубки</li>
+                                <li>Подключение дома к скважине (при
+                                    необходимости)</li>
+                                <li>Проведение греющего кабеля (при
+                                    необходимости)</li>
+                            </ul>
+                            <div class="cost__bottom">
+                                <div class="cost__price">от <span>97 800</span>
+                                    руб.</div>
+                                <div class="cost__btn"><button>Заказать</button></div>
+                            </div>
+                        </div>
+                        <div class="cost__column">
+                            <div class="cost__label">стандарт</div>
+                            <ul class="cost__list">
+                                <li>Сборка и монтаж погружного насоса</li>
+                                <li>Установка гидроаккумулятора</li>
+                                <li>Монтаж и настройка автоматики</li>
+                                <li>Установка скважинного адаптера</li>
+                                <li>Монтаж высокой или низкой опалубки</li>
+                                <li>Подключение дома к скважине (при
+                                    необходимости)</li>
+                                <li>Проведение греющего кабеля (при
+                                    необходимости)</li>
+                            </ul>
+                            <div class="cost__bottom">
+                                <div class="cost__price">от <span>97 800</span>
+                                    руб.</div>
+                                <div class="cost__btn"><button>Заказать</button></div>
+                            </div>
+                        </div>
+                        <div class="cost__column">
+                            <div class="cost__label">комфорт</div>
+                            <ul class="cost__list">
+                                <li>Сборка и монтаж погружного насоса</li>
+                                <li>Установка гидроаккумулятора</li>
+                                <li>Монтаж и настройка автоматики</li>
+                                <li>Установка скважинного адаптера</li>
+                                <li>Монтаж высокой или низкой опалубки</li>
+                                <li>Подключение дома к скважине (при
+                                    необходимости)</li>
+                                <li>Проведение греющего кабеля (при
+                                    необходимости)</li>
+                            </ul>
+                            <div class="cost__bottom">
+                                <div class="cost__price">от <span>97 800</span>
+                                    руб.</div>
+                                <div class="cost__btn"><button>Заказать</button></div>
+                            </div>
+                        </div>
+                        <div class="cost__column">
+                            <div class="cost__label">премиум</div>
+                            <ul class="cost__list">
+                                <li>Сборка и монтаж погружного насоса</li>
+                                <li>Установка гидроаккумулятора</li>
+                                <li>Монтаж и настройка автоматики</li>
+                                <li>Установка скважинного адаптера</li>
+                                <li>Монтаж высокой или низкой опалубки</li>
+                                <li>Подключение дома к скважине (при
+                                    необходимости)</li>
+                                <li>Проведение греющего кабеля (при
+                                    необходимости)</li>
+                            </ul>
+                            <div class="cost__bottom">
+                                <div class="cost__price">от <span>97 800</span>
+                                    руб.</div>
+                                <div class="cost__btn"><button>Заказать</button></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cost__title cost__title_left">Немного о Лимиш</div>
+                    <div class="cost__about">
+                        <div class="cost__about-left">
+                            <div class="cost__img">
+                                <img src="img/sert-1.png" alt="">
+                                <p>Мы сертифицированны</p>
+                                <span><strong>Grundfos</strong></span>
+                            </div>
+                            <div class="cost__img">
+                                <img src="img/sert-2.png" alt="">
+                                <p>Участие в номинации</p>
+                                <span><strong>«Лучшая компания»</strong></span>
+                            </div>
+                        </div>
+                        <div class="cost__about-right">
+                            <ul>
+                                <li>Оплата, <strong>после</strong> завершения
+                                    работ</li>
+                                <li>Возможность выполнения работы <strong>под
+                                        ключ</strong></li>
+                                <li><strong>Предоставляем гарантию</strong> на
+                                    наши работы</li>
+                            </ul>
+                            <p>А <strong>также</strong></p>
+                            <div class="cost__about-row">
+                                <div class="cost__about-item">
+                                    <div class="cost__about-item-text">2009</div>
+                                    <div class="cost__about-item-subtext">мы
+                                        работаем <p>с 2009 года</p></div>
+                                </div>
+                                <div class="cost__about-item">
+                                    <div class="cost__about-item-icon"><img
+                                            src="img/icons8-shop-50.png"
+                                            alt=""></div>
+                                    <div class="cost__about-item-subtext">есть
+                                        <strong>собственный магазин</strong></div>
+                                </div>
+                                <div class="cost__about-item">
+                                    <div class="cost__about-item-icon"><img
+                                            src="img/icons8-money-box-50.png"
+                                            alt=""></div>
+                                    <div class="cost__about-item-subtext">предлагаем
+                                        <strong>лучшую цену</strong></div>
+                                </div>
+                            </div>
+                            <div class="cost__about-btn">
+                                <button>Подробне о нас</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="reviews__row">
+                <div class="reviews__title">
+                    Отзывы о нас
+                </div>
+                <div class="reviews__slider">
+                    <div class="reviews__item">
+                        <div class="reviews__block">
+                            <div class="reviews__img">
+                                <img src="img/skvazhinnye-nasosy-150x150.png"
+                                    alt="">
+                            </div>
+                            <div class="reviews__name">«Мнение о работе ЛИМИШ по
+                                скважине на воду»</div>
+                            <div class="reviews__text">
+                                <p>Я, председатель СНТ «Ясное» Столбов М.Ю.
+                                    настоящим выражаю
+                                    благодарность
+                                    сотрудникам ООО «ЛЕМИШ» за проведенные
+                                    работы и восстановленное
+                                    водоснабжение в поселке. Обращались в марте
+                                    2019 года с просьбой
+                                    восстановления двух артезианских скважин. До
+                                    них вызывали частников с
+                                    авито, которые оборвали нам насос. ЛЕМИШ нам
+                                    насос достал. Вода есть.
+                                    Обратимся еще, будем рекомендовать.</p>
+                                <span>С уважением, Михаил Юрьевич</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__block">
+                            <div class="reviews__img">
+                                <img src="img/skvazhinnye-nasosy-150x150.png"
+                                    alt="">
+                            </div>
+                            <div class="reviews__name">«Мнение о работе ЛИМИШ по
+                                скважине на воду»</div>
+                            <div class="reviews__text">
+                                <p>Я, председатель СНТ «Ясное» Столбов М.Ю.
+                                    настоящим выражаю
+                                    благодарность
+                                    сотрудникам ООО «ЛЕМИШ» за проведенные
+                                    работы и восстановленное
+                                    водоснабжение в поселке. Обращались в марте
+                                    2019 года с просьбой
+                                    восстановления двух артезианских скважин. До
+                                    них вызывали частников с
+                                    авито, которые оборвали нам насос. ЛЕМИШ нам
+                                    насос достал. Вода есть.
+                                    Обратимся еще, будем рекомендовать.</p>
+                                <span>С уважением, Михаил Юрьевич</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviews__item">
+                        <div class="reviews__block">
+                            <div class="reviews__img">
+                                <img src="img/skvazhinnye-nasosy-150x150.png"
+                                    alt="">
+                            </div>
+                            <div class="reviews__name">«Мнение о работе ЛИМИШ по
+                                скважине на воду»</div>
+                            <div class="reviews__text">
+                                <p>Я, председатель СНТ «Ясное» Столбов М.Ю.
+                                    настоящим выражаю
+                                    благодарность
+                                    сотрудникам ООО «ЛЕМИШ» за проведенные
+                                    работы и восстановленное
+                                    водоснабжение в поселке. Обращались в марте
+                                    2019 года с просьбой
+                                    восстановления двух артезианских скважин. До
+                                    них вызывали частников с
+                                    авито, которые оборвали нам насос. ЛЕМИШ нам
+                                    насос достал. Вода есть.
+                                    Обратимся еще, будем рекомендовать.</p>
+                                <span>С уважением, Михаил Юрьевич</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="calc">
+            <div class="container">
+                <div class="calc__column">
+                    <div class="calc__title">
+                        Калькулятор стоимости обустройства скважины
+                    </div>
+                    <div class="calc__main">
+                        <div class="calc__menu">
+                            <div class="selectboxss">
+                                <div class="selectboxssvalue"><span>Выберите
+                                        калькулятор<img
+                                            src="img/icons8-sort-down-50.png"
+                                            class="arrowselect" /></span></div>
+                                <ul class="selectboxssmenu">
+                                    <li data-tab="1" class="calc__menu_active
+                                        selectoption">С кесоном
                                     </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-2"
-                                            aria-hidden="aria-hidden">Волоколамский</label>
+                                    <li data-tab="2" class="selectoption">С
+                                        адптером
                                     </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-3"
-                                            aria-hidden="aria-hidden">Воскресенский</label>
-                                    </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-4"
-                                            aria-hidden="aria-hidden">Дмитровский</label>
-                                    </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-5"
-                                            aria-hidden="aria-hidden">Домодедовский</label>
-                                    </li>
+                                    <li data-tab="3" class="selectoption">Обустройство
+                                        Абиссинской скважины</li>
+                                    <li data-tab="4" class="selectoption">Обвязка
+                                        самоизливной скважины</li>
+                                    <li data-tab="5" class="selectoption">Скважины
+                                        на
+                                        песок</li>
                                 </ul>
                             </div>
-                        </label>
-                        <label for="depth-range">
-                            Глубина :
-                            <input id="depth-range" type="range"
-                                name="depth-range" min="1"
-                                max="180" step="1" data-step="1000" value="1">
-                            <span><span id="value-depth-range">1</span> м</span>
-                            <div id="slider-range-min"></div>
-                        </label>
-                        <label class="mobile-flex">
-                            <div class="mobile-form-title">Комплектация :</div>
-                            <div class="calc__check">
-                                <input type="radio" id="eco-1"
-                                    name="calc__check" value="Эконом"
-                                    data-check="428">
-                                <label for="eco-1">Эконом</label>
-                                <svg title="Описание" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="7.5" cy="8" r="7.5" fill="#118ed5"></circle>
-                                    <path d="M7.04688 9.75H7.98437V9.70312C8
-                                        8.73438 8.25 8.3125 8.9375 7.88281C9.625
-                                        7.46484 10.0313 6.86328 10.0313
-                                        6C10.0313 4.78125 9.14063 3.89062
-                                        7.76563 3.89062C6.5 3.89062 5.49609
-                                        4.67187 5.4375 6H6.42188C6.48047 5.07812
-                                        7.125 4.70312 7.76563 4.70312C8.5
-                                        4.70312 9.09375 5.1875 9.09375
-                                        5.95312C9.09375 6.57422 8.73828 7.01953
-                                        8.28125 7.29687C7.51563 7.76172 7.05859
-                                        8.21484 7.04688 9.70312V9.75ZM7.54688
-                                        12.0625C7.93359 12.0625 8.25 11.7461
-                                        8.25 11.3594C8.25 10.9727 7.93359
-                                        10.6562 7.54688 10.6562C7.16016 10.6562
-                                        6.84375 10.9727 6.84375 11.3594C6.84375
-                                        11.7461 7.16016 12.0625 7.54688
-                                        12.0625Z" fill="#fff"></path>
-                                </svg>
+                        </div>
+                        <div id="spnMoreInfo" class="calc__block tab-active"
+                            data-tab="1">
+                            <form action="" class="calc__form">
+                                <label for="">
+                                    Выберите район :
+                                    <div class="select-box">
+                                        <div class="select-box__current"
+                                            tabindex="1">
+                                            <div class="select-box__value">
+                                                <input class="select-box__input"
+                                                    type="radio"
+                                                    id="select-box-0"
+                                                    value="0"
+                                                    name="Ben" checked="checked"
+                                                    />
+                                                <p
+                                                    class="select-box__input-text">Не
+                                                    выбрано</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input"
+                                                    type="radio"
+                                                    id="select-box-1"
+                                                    name="Ben" data-check="1"
+                                                    checked="checked" />
+                                                <p
+                                                    class="select-box__input-text">Балашихинский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input"
+                                                    type="radio"
+                                                    id="select-box-2"
+                                                    name="Ben" data-check="2" />
+                                                <p
+                                                    class="select-box__input-text">Волоколамский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input"
+                                                    type="radio"
+                                                    id="select-box-3"
+                                                    name="Ben" data-check="3" />
+                                                <p
+                                                    class="select-box__input-text">Воскресенский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input"
+                                                    type="radio"
+                                                    id="select-box-4"
+                                                    name="Ben" data-check="4" />
+                                                <p
+                                                    class="select-box__input-text">Дмитровский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input"
+                                                    type="radio"
+                                                    id="select-box-5"
+                                                    name="Ben" data-check="5" />
+                                                <p
+                                                    class="select-box__input-text">Домодедовский</p>
+                                            </div>
+                                            <img class="select-box__icon"
+                                                src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
+                                                alt="Arrow
+                                                Icon" aria-hidden="true" />
+                                        </div>
+                                        <ul class="select-box__list">
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-1"
+                                                    aria-hidden="aria-hidden">Балашихинский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-2"
+                                                    aria-hidden="aria-hidden">Волоколамский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-3"
+                                                    aria-hidden="aria-hidden">Воскресенский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-4"
+                                                    aria-hidden="aria-hidden">Дмитровский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-5"
+                                                    aria-hidden="aria-hidden">Домодедовский</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </label>
+                                <label for="depth-range">
+                                    Глубина :
+                                    <input id="depth-range" type="range"
+                                        name="depth-range" min="1"
+                                        max="180" step="1" data-step="1000"
+                                        value="1">
+                                    <span><span id="value-depth-range">1</span>
+                                        м</span>
+                                    <div id="slider-range-min"></div>
+                                </label>
+                                <label class="mobile-flex">
+                                    <div class="mobile-form-title">Комплектация
+                                        :</div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="eco-1"
+                                            name="calc__check" value="Эконом"
+                                            data-check="428">
+                                        <label for="eco-1">Эконом</label>
+                                        <svg title="Описание" width="17"
+                                            height="17" viewBox="0 0 17 17"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="7.5" cy="8" r="7.5"
+                                                fill="#118ed5"></circle>
+                                            <path d="M7.04688
+                                                9.75H7.98437V9.70312C8
+                                                8.73438 8.25 8.3125 8.9375
+                                                7.88281C9.625
+                                                7.46484 10.0313 6.86328 10.0313
+                                                6C10.0313 4.78125 9.14063
+                                                3.89062
+                                                7.76563 3.89062C6.5 3.89062
+                                                5.49609
+                                                4.67187 5.4375 6H6.42188C6.48047
+                                                5.07812
+                                                7.125 4.70312 7.76563
+                                                4.70312C8.5
+                                                4.70312 9.09375 5.1875 9.09375
+                                                5.95312C9.09375 6.57422 8.73828
+                                                7.01953
+                                                8.28125 7.29687C7.51563 7.76172
+                                                7.05859
+                                                8.21484 7.04688
+                                                9.70312V9.75ZM7.54688
+                                                12.0625C7.93359 12.0625 8.25
+                                                11.7461
+                                                8.25 11.3594C8.25 10.9727
+                                                7.93359
+                                                10.6562 7.54688 10.6562C7.16016
+                                                10.6562
+                                                6.84375 10.9727 6.84375
+                                                11.3594C6.84375
+                                                11.7461 7.16016 12.0625 7.54688
+                                                12.0625Z" fill="#fff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="std-1"
+                                            name="calc__check" value="Стандарт"
+                                            data-check="650">
+                                        <label for="std-1">Стандарт</label>
+                                        <svg title="Описание 2" width="17"
+                                            height="17" viewBox="0 0 17 17"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="7.5" cy="8" r="7.5"
+                                                fill="#118ed5"></circle>
+                                            <path d="M7.04688
+                                                9.75H7.98437V9.70312C8
+                                                8.73438 8.25 8.3125 8.9375
+                                                7.88281C9.625
+                                                7.46484 10.0313 6.86328 10.0313
+                                                6C10.0313 4.78125 9.14063
+                                                3.89062
+                                                7.76563 3.89062C6.5 3.89062
+                                                5.49609
+                                                4.67187 5.4375 6H6.42188C6.48047
+                                                5.07812
+                                                7.125 4.70312 7.76563
+                                                4.70312C8.5
+                                                4.70312 9.09375 5.1875 9.09375
+                                                5.95312C9.09375 6.57422 8.73828
+                                                7.01953
+                                                8.28125 7.29687C7.51563 7.76172
+                                                7.05859
+                                                8.21484 7.04688
+                                                9.70312V9.75ZM7.54688
+                                                12.0625C7.93359 12.0625 8.25
+                                                11.7461
+                                                8.25 11.3594C8.25 10.9727
+                                                7.93359
+                                                10.6562 7.54688 10.6562C7.16016
+                                                10.6562
+                                                6.84375 10.9727 6.84375
+                                                11.3594C6.84375
+                                                11.7461 7.16016 12.0625 7.54688
+                                                12.0625Z" fill="#fff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="com-1"
+                                            name="calc__check" value="Комфорт"
+                                            data-check="750">
+                                        <label for="com-1">Комфорт</label>
+                                        <svg title="Описание 3" width="17"
+                                            height="17" viewBox="0 0 17 17"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="7.5" cy="8" r="7.5"
+                                                fill="#118ed5"></circle>
+                                            <path d="M7.04688
+                                                9.75H7.98437V9.70312C8
+                                                8.73438 8.25 8.3125 8.9375
+                                                7.88281C9.625
+                                                7.46484 10.0313 6.86328 10.0313
+                                                6C10.0313 4.78125 9.14063
+                                                3.89062
+                                                7.76563 3.89062C6.5 3.89062
+                                                5.49609
+                                                4.67187 5.4375 6H6.42188C6.48047
+                                                5.07812
+                                                7.125 4.70312 7.76563
+                                                4.70312C8.5
+                                                4.70312 9.09375 5.1875 9.09375
+                                                5.95312C9.09375 6.57422 8.73828
+                                                7.01953
+                                                8.28125 7.29687C7.51563 7.76172
+                                                7.05859
+                                                8.21484 7.04688
+                                                9.70312V9.75ZM7.54688
+                                                12.0625C7.93359 12.0625 8.25
+                                                11.7461
+                                                8.25 11.3594C8.25 10.9727
+                                                7.93359
+                                                10.6562 7.54688 10.6562C7.16016
+                                                10.6562
+                                                6.84375 10.9727 6.84375
+                                                11.3594C6.84375
+                                                11.7461 7.16016 12.0625 7.54688
+                                                12.0625Z" fill="#fff"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="prm-1"
+                                            name="calc__check" value="Премиум"
+                                            data-check="900">
+                                        <label for="prm-1">Премиум</label>
+                                        <svg title="Описание 4" width="17"
+                                            height="17" viewBox="0 0 17 17"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="7.5" cy="8" r="7.5"
+                                                fill="#118ed5"></circle>
+                                            <path d="M7.04688
+                                                9.75H7.98437V9.70312C8
+                                                8.73438 8.25 8.3125 8.9375
+                                                7.88281C9.625
+                                                7.46484 10.0313 6.86328 10.0313
+                                                6C10.0313 4.78125 9.14063
+                                                3.89062
+                                                7.76563 3.89062C6.5 3.89062
+                                                5.49609
+                                                4.67187 5.4375 6H6.42188C6.48047
+                                                5.07812
+                                                7.125 4.70312 7.76563
+                                                4.70312C8.5
+                                                4.70312 9.09375 5.1875 9.09375
+                                                5.95312C9.09375 6.57422 8.73828
+                                                7.01953
+                                                8.28125 7.29687C7.51563 7.76172
+                                                7.05859
+                                                8.21484 7.04688
+                                                9.70312V9.75ZM7.54688
+                                                12.0625C7.93359 12.0625 8.25
+                                                11.7461
+                                                8.25 11.3594C8.25 10.9727
+                                                7.93359
+                                                10.6562 7.54688 10.6562C7.16016
+                                                10.6562
+                                                6.84375 10.9727 6.84375
+                                                11.3594C6.84375
+                                                11.7461 7.16016 12.0625 7.54688
+                                                12.0625Z" fill="#fff"></path>
+                                        </svg>
+                                    </div>
+                                </label>
+                                <div class="space">
+                                    <input type="submit" value="Рассчитать">
+                                    <div class="calc__result">
+                                        <p>Итого: </p>
+                                        <span class="price-red calc__price">1428</span>
+                                        <span>руб.</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div id="spnMoreInfo" class="calc__block" data-tab="2">
+                            <form action="" class="calc__form">
+                                <label for="">
+                                    Выберите район :
+                                    <div class="select-box">
+                                        <div class="select-box__current"
+                                            tabindex="1">
+                                            <div class="select-box__value">
+                                                <input class="select-box__input
+                                                    cost_calc_calculate"
+                                                    type="radio"
+                                                    id="select-box-0"
+                                                    value="0"
+                                                    name="Ben" checked="checked"
+                                                    />
+                                                <p
+                                                    class="select-box__input-text">Не
+                                                    выбрано</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input
+                                                    cost_calc_calculate"
+                                                    type="radio"
+                                                    id="select-box-1"
+                                                    name="Ben" data-check="1"
+                                                    checked="checked" />
+                                                <p
+                                                    class="select-box__input-text">Балашихинский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input
+                                                    cost_calc_calculate"
+                                                    type="radio"
+                                                    id="select-box-2"
+                                                    name="Ben" data-check="2" />
+                                                <p
+                                                    class="select-box__input-text">Волоколамский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input
+                                                    cost_calc_calculate"
+                                                    type="radio"
+                                                    id="select-box-3"
+                                                    name="Ben" data-check="3" />
+                                                <p
+                                                    class="select-box__input-text">Воскресенский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input
+                                                    cost_calc_calculate"
+                                                    type="radio"
+                                                    id="select-box-4"
+                                                    name="Ben" data-check="4" />
+                                                <p
+                                                    class="select-box__input-text">Дмитровский</p>
+                                            </div>
+                                            <div class="select-box__value">
+                                                <input class="select-box__input
+                                                    cost_calc_calculate"
+                                                    type="radio"
+                                                    id="select-box-5"
+                                                    name="Ben" data-check="5" />
+                                                <p
+                                                    class="select-box__input-text">Домодедовский</p>
+                                            </div>
+                                            <img class="select-box__icon"
+                                                src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
+                                                alt="Arrow
+                                                Icon" aria-hidden="true" />
+                                        </div>
+                                        <ul class="select-box__list">
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-1"
+                                                    aria-hidden="aria-hidden">Балашихинский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-2"
+                                                    aria-hidden="aria-hidden">Волоколамский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-3"
+                                                    aria-hidden="aria-hidden">Воскресенский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-4"
+                                                    aria-hidden="aria-hidden">Дмитровский</label>
+                                            </li>
+                                            <li>
+                                                <label
+                                                    class="select-box__option"
+                                                    for="select-box-5"
+                                                    aria-hidden="aria-hidden">Домодедовский</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </label>
+                                <label for="depth-range">
+                                    Глубина :
+                                    <input id="depth-range" type="range"
+                                        class="cost_calc_calculate"
+                                        name="depth-range" min="1"
+                                        max="180" step="1" data-step="1000"
+                                        value="1">
+                                    <span><span id="value-depth-range">1</span>
+                                        м</span>
+                                    <input type="text" id="amount" readonly
+                                        style="border:0; font-weight:bold;">
+                                    <div id="slider-range-min"></div>
+                                </label>
+                                <label>
+                                    Комплектация :
+                                    <div class="calc__check">
+                                        <input type="radio" id="eco-2"
+                                            name="calc__check" value="Эконом"
+                                            data-check="150"
+                                            class="cost_calc_calculate">
+                                        <label for="eco-2">Эконом</label>
+                                    </div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="std-2"
+                                            name="calc__check" value="Стандарт"
+                                            data-check="200"
+                                            class="cost_calc_calculate">
+                                        <label for="std-2">Стандарт</label>
+                                    </div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="com-2"
+                                            name="calc__check" value="Комфорт"
+                                            data-check="285"
+                                            class="cost_calc_calculate">
+                                        <label for="com-2">Комфорт</label>
+                                    </div>
+                                    <div class="calc__check">
+                                        <input type="radio" id="prm-2"
+                                            name="calc__check" value="Премиум"
+                                            data-check="400"
+                                            class="cost_calc_calculate">
+                                        <label for="prm-2">Премиум</label>
+                                    </div>
+                                </label>
+                                <div class="space">
+                                    <input type="submit" value="Рассчитать">
+                                    <div class="calc__result">
+                                        <p>Итого: </p>
+                                        <span class="price-red-2 calc__price">0</span>
+                                        <span>руб.</span>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="question">
+            <div class="container">
+                <div class="question__column">
+                    <div class="question__row">
+                        <div class="question__title">Часто задаваемые вопросы</div>
+                    </div>
+                    <div class="question__row">
+                        <div class="question__acc">
+                            <div class="question__acc-item">
+                                <div class="question__acc-title">Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt?
+                                </div>
+                                <div class="question__acc-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus
+                                        commodo viverra maecenas accumsan
+                                        lacus vel facilisis. </p>
+                                </div>
                             </div>
-                            <div class="calc__check">
-                                <input type="radio" id="std-1"
-                                    name="calc__check" value="Стандарт"
-                                    data-check="650">
-                                <label for="std-1">Стандарт</label>
-                                <svg title="Описание 2" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="7.5" cy="8" r="7.5" fill="#118ed5"></circle>
-                                    <path d="M7.04688 9.75H7.98437V9.70312C8
-                                        8.73438 8.25 8.3125 8.9375 7.88281C9.625
-                                        7.46484 10.0313 6.86328 10.0313
-                                        6C10.0313 4.78125 9.14063 3.89062
-                                        7.76563 3.89062C6.5 3.89062 5.49609
-                                        4.67187 5.4375 6H6.42188C6.48047 5.07812
-                                        7.125 4.70312 7.76563 4.70312C8.5
-                                        4.70312 9.09375 5.1875 9.09375
-                                        5.95312C9.09375 6.57422 8.73828 7.01953
-                                        8.28125 7.29687C7.51563 7.76172 7.05859
-                                        8.21484 7.04688 9.70312V9.75ZM7.54688
-                                        12.0625C7.93359 12.0625 8.25 11.7461
-                                        8.25 11.3594C8.25 10.9727 7.93359
-                                        10.6562 7.54688 10.6562C7.16016 10.6562
-                                        6.84375 10.9727 6.84375 11.3594C6.84375
-                                        11.7461 7.16016 12.0625 7.54688
-                                        12.0625Z" fill="#fff"></path>
-                                </svg>
+                            <div class="question__acc-item">
+                                <div class="question__acc-title">Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt?
+                                </div>
+                                <div class="question__acc-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus
+                                        commodo viverra maecenas accumsan
+                                        lacus vel facilisis. </p>
+                                </div>
                             </div>
-                            <div class="calc__check">
-                                <input type="radio" id="com-1"
-                                    name="calc__check" value="Комфорт"
-                                    data-check="750">
-                                <label for="com-1">Комфорт</label>
-                                <svg title="Описание 3" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="7.5" cy="8" r="7.5" fill="#118ed5"></circle>
-                                    <path d="M7.04688 9.75H7.98437V9.70312C8
-                                        8.73438 8.25 8.3125 8.9375 7.88281C9.625
-                                        7.46484 10.0313 6.86328 10.0313
-                                        6C10.0313 4.78125 9.14063 3.89062
-                                        7.76563 3.89062C6.5 3.89062 5.49609
-                                        4.67187 5.4375 6H6.42188C6.48047 5.07812
-                                        7.125 4.70312 7.76563 4.70312C8.5
-                                        4.70312 9.09375 5.1875 9.09375
-                                        5.95312C9.09375 6.57422 8.73828 7.01953
-                                        8.28125 7.29687C7.51563 7.76172 7.05859
-                                        8.21484 7.04688 9.70312V9.75ZM7.54688
-                                        12.0625C7.93359 12.0625 8.25 11.7461
-                                        8.25 11.3594C8.25 10.9727 7.93359
-                                        10.6562 7.54688 10.6562C7.16016 10.6562
-                                        6.84375 10.9727 6.84375 11.3594C6.84375
-                                        11.7461 7.16016 12.0625 7.54688
-                                        12.0625Z" fill="#fff"></path>
-                                </svg>
+                            <div class="question__acc-item">
+                                <div class="question__acc-title">Lorem ipsum
+                                    dolor sit amet, consectetur
+                                    adipiscing elit, sed do eiusmod tempor
+                                    incididunt?
+                                </div>
+                                <div class="question__acc-text">
+                                    <p>Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit, sed do
+                                        eiusmod tempor incididunt ut labore et
+                                        dolore magna aliqua. Quis ipsum
+                                        suspendisse ultrices gravida. Risus
+                                        commodo viverra maecenas accumsan
+                                        lacus vel facilisis. </p>
+                                </div>
                             </div>
-                            <div class="calc__check">
-                                <input type="radio" id="prm-1"
-                                    name="calc__check" value="Премиум"
-                                    data-check="900">
-                                <label for="prm-1">Премиум</label>
-                                <svg title="Описание 4" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <circle cx="7.5" cy="8" r="7.5" fill="#118ed5"></circle>
-                                    <path d="M7.04688 9.75H7.98437V9.70312C8
-                                        8.73438 8.25 8.3125 8.9375 7.88281C9.625
-                                        7.46484 10.0313 6.86328 10.0313
-                                        6C10.0313 4.78125 9.14063 3.89062
-                                        7.76563 3.89062C6.5 3.89062 5.49609
-                                        4.67187 5.4375 6H6.42188C6.48047 5.07812
-                                        7.125 4.70312 7.76563 4.70312C8.5
-                                        4.70312 9.09375 5.1875 9.09375
-                                        5.95312C9.09375 6.57422 8.73828 7.01953
-                                        8.28125 7.29687C7.51563 7.76172 7.05859
-                                        8.21484 7.04688 9.70312V9.75ZM7.54688
-                                        12.0625C7.93359 12.0625 8.25 11.7461
-                                        8.25 11.3594C8.25 10.9727 7.93359
-                                        10.6562 7.54688 10.6562C7.16016 10.6562
-                                        6.84375 10.9727 6.84375 11.3594C6.84375
-                                        11.7461 7.16016 12.0625 7.54688
-                                        12.0625Z" fill="#fff"></path>
-                                </svg>
+                        </div>
+                        <div class="ajax-load-product">
+                            <div class="ajax-load-product__button">
+                                <button>Показать еще</button>
                             </div>
-                        </label>
-                        <div class="space">
-                            <input type="submit" value="Рассчитать">
-                            <div class="calc__result">
-                                <p>Итого: </p>
-                                <span class="price-red calc__price">1428</span>
-                                <span>руб.</span>
-                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="question-form">
+            <div class="container">
+                <div class="question-form__row">
+                    <form action="" class="question-form__form">
+                        <div class="question-form__title">
+                            Не нашли ответа на вопрос?
+                        </div>
+                        <div class="question-form__subtitle">
+                            Задайте свой вопрос и мы ответим вам в ближайшее
+                            время
+                        </div>
+                        <div class="question-form__inputblock">
+                            <input type="text" name="" id=""
+                                class="question-form__input"
+                                placeholder="Ваше имя" required>
+                            <input type="tel" name="" id=""
+                                class="question-form__input"
+                                placeholder="Номер телефона" required>
+                            <input type="email" name="" id=""
+                                class="question-form__input"
+                                placeholder="E-mail" required>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10"
+                            class="question-form__area"
+                            placeholder="Ваш вопрос..." required></textarea>
+                        <input type="submit" value="Отправить вопрос">
+                        <div class="question-form__pd">
+                            <span>Нажимая на кнопку, вы соглашаетесь с
+                                обработкой <a href="">
+                                    персональных данных</a></span>
                         </div>
                     </form>
                 </div>
-                <div id="spnMoreInfo" class="calc__block"data-tab="2">
-                    <form action="" class="calc__form">
-                        <label for="">
-                            Выберите район :
-                            <div class="select-box">
-                                <div class="select-box__current" tabindex="1">
-                                    <div class="select-box__value">
-                                        <input class="select-box__input
-                                            cost_calc_calculate"
-                                            type="radio" id="select-box-0"
-                                            value="0"
-                                            name="Ben" checked="checked" />
-                                        <p class="select-box__input-text">Не
-                                            выбрано</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input
-                                            cost_calc_calculate"
-                                            type="radio" id="select-box-1"
-                                            name="Ben" data-check="1"
-                                            checked="checked" />
-                                        <p class="select-box__input-text">Балашихинский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input
-                                            cost_calc_calculate"
-                                            type="radio" id="select-box-2"
-                                            name="Ben" data-check="2" />
-                                        <p class="select-box__input-text">Волоколамский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input
-                                            cost_calc_calculate"
-                                            type="radio" id="select-box-3"
-                                            name="Ben" data-check="3" />
-                                        <p class="select-box__input-text">Воскресенский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input
-                                            cost_calc_calculate"
-                                            type="radio" id="select-box-4"
-                                            name="Ben" data-check="4" />
-                                        <p class="select-box__input-text">Дмитровский</p>
-                                    </div>
-                                    <div class="select-box__value">
-                                        <input class="select-box__input
-                                            cost_calc_calculate"
-                                            type="radio" id="select-box-5"
-                                            name="Ben" data-check="5" />
-                                        <p class="select-box__input-text">Домодедовский</p>
-                                    </div>
-                                    <img class="select-box__icon"
-                                        src="http://cdn.onlinewebfonts.com/svg/img_295694.svg"
-                                        alt="Arrow
-                                        Icon" aria-hidden="true" />
+            </div>
+        </section>
+        <section class="photo-slider">
+            <div class="photo-slider__column">
+                <div class="photo-slider__title">По следам наших мастеров:
+                    фоторепортаж</div>
+                <div id="photo-slider__start" class="photo-slider__row">
+                    <div class="photo-slider__item">
+                        <div class="photo-slider__img photo-slider__img_one">
+                            <img
+                                src="img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png"
+                                alt="">
+                        </div>
+                        <div class="photo-slider__img photo-slider__img_two">
+                            <img
+                                src="img/1c24608b-028f-4c31-8f89-473f4441f356.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="photo-slider__item">
+                        <div class="photo-slider__img photo-slider__img_one">
+                            <img
+                                src="img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png"
+                                alt="">
+                        </div>
+                        <div class="photo-slider__img photo-slider__img_two">
+                            <img
+                                src="img/1c24608b-028f-4c31-8f89-473f4441f356.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="photo-slider__item">
+                        <div class="photo-slider__img photo-slider__img_one">
+                            <img
+                                src="img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png"
+                                alt="">
+                        </div>
+                        <div class="photo-slider__img photo-slider__img_two">
+                            <img
+                                src="img/1c24608b-028f-4c31-8f89-473f4441f356.png"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="photo-slider__item">
+                        <div class="photo-slider__img photo-slider__img_one">
+                            <img
+                                src="img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png"
+                                alt="">
+                        </div>
+                        <div class="photo-slider__img photo-slider__img_two">
+                            <img
+                                src="img/1c24608b-028f-4c31-8f89-473f4441f356.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container">
+                <div class="map__column">
+                    <div class="map__title">Карта наших работ</div>
+                    <div class="map__main">
+                        <div style="position:relative;overflow:hidden;"><a
+                                href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a
+                                href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.742861%2C55.703823&utm_medium=mapframe&utm_source=maps&z=9.63"
+                                style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва
+                                —
+                                Яндекс.Карты</a><iframe
+                                src="https://yandex.ru/map-widget/v1/-/CCU4qWG8LC"
+                                width="100%"
+                                height="455" frameborder="1"
+                                allowfullscreen="true"
+                                style="position:relative;"></iframe></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last-job">
+            <div class="container">
+                <div class="last-job__column">
+                    <div class="last-job__title">Последние работы</div>
+                    <div class="last-job__cards">
+                        <div class="last-job__item">
+                            <a href="">
+                                <div class="last-job__img">
+                                    <img src="img/img-cards.png" alt="">
                                 </div>
-                                <ul class="select-box__list">
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-1"
-                                            aria-hidden="aria-hidden">Балашихинский</label>
-                                    </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-2"
-                                            aria-hidden="aria-hidden">Волоколамский</label>
-                                    </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-3"
-                                            aria-hidden="aria-hidden">Воскресенский</label>
-                                    </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-4"
-                                            aria-hidden="aria-hidden">Дмитровский</label>
-                                    </li>
-                                    <li>
-                                        <label class="select-box__option"
-                                            for="select-box-5"
-                                            aria-hidden="aria-hidden">Домодедовский</label>
-                                    </li>
-                                </ul>
+                                <div class="last-job__name">
+                                    Обустройство скважины в городе
+                                </div>
+                                <div class="last-job__date">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    <span>30/07/2020</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="last-job__item">
+                            <div class="last-job__img">
+                                <img src="img/img-cards.png" alt="">
                             </div>
-                        </label>
-                        <label for="depth-range">
-                            Глубина :
-                            <input id="depth-range" type="range"
-                                class="cost_calc_calculate"
-                                name="depth-range" min="1"
-                                max="180" step="1" data-step="1000" value="1">
-                            <span><span id="value-depth-range">1</span> м</span>
-                            <input type="text" id="amount" readonly
-                                style="border:0; font-weight:bold;">
-                            <div id="slider-range-min"></div>
-                        </label>
-                        <label>
-                            Комплектация :
-                            <div class="calc__check">
-                                <input type="radio" id="eco-2"
-                                    name="calc__check" value="Эконом"
-                                    data-check="150"
-                                    class="cost_calc_calculate">
-                                <label for="eco-2">Эконом</label>
+                            <div class="last-job__name">
+                                Обустройство скважины в городе
                             </div>
-                            <div class="calc__check">
-                                <input type="radio" id="std-2"
-                                    name="calc__check" value="Стандарт"
-                                    data-check="200"
-                                    class="cost_calc_calculate">
-                                <label for="std-2">Стандарт</label>
-                            </div>
-                            <div class="calc__check">
-                                <input type="radio" id="com-2"
-                                    name="calc__check" value="Комфорт"
-                                    data-check="285"
-                                    class="cost_calc_calculate">
-                                <label for="com-2">Комфорт</label>
-                            </div>
-                            <div class="calc__check">
-                                <input type="radio" id="prm-2"
-                                    name="calc__check" value="Премиум"
-                                    data-check="400"
-                                    class="cost_calc_calculate">
-                                <label for="prm-2">Премиум</label>
-                            </div>
-                        </label>
-                        <div class="space">
-                            <input type="submit" value="Рассчитать">
-                            <div class="calc__result">
-                                <p>Итого: </p>
-                                <span class="price-red-2 calc__price">0</span>
-                                <span>руб.</span>
+                            <div class="last-job__date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>30/07/2020</span>
                             </div>
                         </div>
-                    </form>
+                        <div class="last-job__item">
+                            <div class="last-job__img">
+                                <img src="img/img-cards.png" alt="">
+                            </div>
+                            <div class="last-job__name">
+                                Обустройство скважины в городе
+                            </div>
+                            <div class="last-job__date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>30/07/2020</span>
+                            </div>
+                        </div>
+                        <div class="last-job__item">
+                            <div class="last-job__img">
+                                <img src="img/img-cards.png" alt="">
+                            </div>
+                            <div class="last-job__name">
+                                Обустройство скважины в городе
+                            </div>
+                            <div class="last-job__date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>30/07/2020</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last-job__button"><button>Показать все</button></div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
+        <section class="licence">
+            <div class="container">
+                <div class="licence__column">
+                    <div class="licence__title">
+                        Лицензии и сертификаты
+                    </div>
+                    <div class="licence__list">
+                        <div class="licence__item">
+                            <img src="img/licence__item-1.png" alt="">
+                        </div>
+                        <div class="licence__item">
+                            <img src="img/licence__item-2.png" alt="">
+                        </div>
+                        <div class="licence__item">
+                            <img src="img/licence__item-3.png" alt="">
+                        </div>
+                        <div class="licence__item">
+                            <img src="img/licence__item-4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="blog">
+            <div class="container">
+                <div class="blog__column">
+                    <div class="blog__title">
+                        О водоснабжении доступным языком
+                    </div>
+                    <div class="blog__cards">
+                        <div class="blog__item" style="background-image:
+                            url('img/remont_kanalizacii-1024x643.jpg')">
+                            <div class="blog__name">МОНТАЖ, РЕМОНТ КАНАЛИЗАЦИИ:
+                                БЕСПЕРЕБОЙНАЯ
+                                СИСТЕМА ОТ ПРОФЕССИОНАЛОВМОНТАЖ, РЕМОНТ
+                                КАНАЛИЗАЦИИ: БЕСПЕРЕБОЙНАЯ
+                                СИСТЕМА ОТ ПРОФЕССИОНАЛОВ МОНТАЖ, РЕМОНТ
+                                КАНАЛИЗАЦИИ: БЕСПЕРЕБОЙНАЯ
+                                СИСТЕМА ОТ ПРОФЕССИОНАЛОВ </div>
+                            <div class="blog__button"><button>Подробнее</button></div>
+                        </div>
+                        <div class="blog__item" style="background-image:
+                            url('img/remont_kanalizacii-1024x643.jpg')">
+                            <div class="blog__name">ШНЕКОВОЕ БУРЕНИЕ СКВАЖИН</div>
+                            <div class="blog__button"><button>Подробнее</button></div>
+                        </div>
+                        <div class="blog__item" style="background-image:
+                            url('img/remont_kanalizacii-1024x643.jpg')">
+                            <div class="blog__name">НЕОБХОДИМО ОБСЛЕДОВАНИЕ
+                                СКВАЖИНЫ:
+                                ДЛЯ ЧЕГО НУЖНА ТЕЛЕИНСПЕКЦИЯ?</div>
+                            <div class="blog__button"><button>Подробнее</button></div>
+                        </div>
+                        <div class="blog__item" style="background-image:
+                            url('img/remont_kanalizacii-1024x643.jpg')">
+                            <div class="blog__name">УСТАНОВКА И ОБУСТРОЙСТВО
+                                КЕССОНА:
+                                КОНТРОЛИРУЙТЕ ЧИСТОТУ ВАШЕЙ СКВАЖИНЫ!</div>
+                            <div class="blog__button"><button>Подробнее</button></div>
+                        </div>
+                    </div>
+                    <div class="ajax-load-product">
+                        <div class="ajax-load-product__button">
+                            <button>Показать еще</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="seo-text">
+            <div class="container">
+                <div class="seo-text__row">
+                    <div class="seo-text__title">
+                        Lorem ipsum dolor sit amet, consectetur
+                    </div>
+                    <div class="seo-text__text">
+                        <p style="display:block;">Lorem ipsum dolor sit amet
+                            consectetur
+                            adipisicing elit. Obcaecati rem
+                            numquam iste, veniam quisquam consequatur beatae
+                            eius totam. Perferendis
+                            aut quo aliquam quae, ipsa saepe dolore culpa beatae
+                            adipisci placeat!
+                            Alias laudantium maiores itaque laboriosam, nemo
+                            ullam accusantium
+                            numquam
+                            ratione dolor quae labore non a inventore eos
+                            consectetur minima quos.
+                            Voluptatibus laborum eaque eum repellat odio quam
+                            aperiam officia
+                            placeat.
+                            At, ea maxime dolores debitis accusamus pariatur
+                            vitae. Quasi totam
+                            obcaecati inventore quaerat, saepe quisquam repellat
+                            molestias nemo,
+                            reprehenderit similique enim earum, vero recusandae
+                            architecto explicabo
+                            consequuntur officia. Autem, minima.
+                            Cupiditate consectetur tempore rem repudiandae,
+                            inventore labore amet
+                            voluptatem ad ipsa molestias tempora voluptas nam,
+                            earum soluta autem
+                            molestiae libero voluptatibus asperiores esse
+                            nostrum repellat incidunt?
+                            Officia non eligendi tempore?
+                            Exercitationem porro eveniet vel? Tenetur nisi
+                            quidem voluptatum
+                            blanditiis
+                            facilis rem at corporis explicabo eaque, porro modi
+                            animi quisquam iusto
+                            delectus sed ex a saepe qui aperiam aliquam?
+                            Aliquid, porro.
+                            Obcaecati inventore iusto dolore quod beatae
+                            explicabo ipsa numquam minus
+                            et sequi voluptatibus cupiditate reprehenderit ad
+                            nostrum, similique at
+                            deleniti! Perspiciatis similique alias officiis
+                            cupiditate maiores
+                            voluptatem temporibus nesciunt! Aperiam?
+                            Libero voluptas omnis totam molestiae unde adipisci
+                            rem quo. Labore totam
+                            quos cum harum quas quibusdam. Blanditiis voluptate
+                            excepturi,
+                            reprehenderit possimus inventore optio dolorem
+                            consectetur? Eos
+                            voluptatibus repellat nisi quidem.
+                            Officiis in ut soluta quidem nihil exercitationem
+                            nulla quae dolorem eum
+                            voluptas, quis similique possimus aliquid mollitia
+                            quisquam ea. At
+                            reprehenderit accusantium quos doloremque voluptate
+                            id incidunt, aperiam
+                            amet ad.
+                            Ex numquam, similique praesentium esse, earum
+                            deserunt beatae doloribus
+                            repellendus optio enim voluptatum mollitia
+                            distinctio neque eum quia a
+                            corrupti, laboriosam quas nobis! Quasi, ullam eaque?
+                            Optio velit corporis
+                            tempore.
+                            At corrupti laboriosam ipsum possimus distinctio ea
+                            voluptatibus amet,
+                            dolor voluptas minima quasi nobis! Harum a animi,
+                            necessitatibus numquam
+                            laudantium, ea quos quia, cupiditate laboriosam
+                            facilis eos adipisci
+                            eligendi illum.</p>
 
-		<section class="question">
-			<div class="container">
-				<div class="question__column">
-					<div class="question__row">
-						<div class="question__title">Часто задаваемые вопросы</div>
-					</div>
-					<div class="question__row">
-						<div class="question__acc">
-							<div class="question__acc-item">
-								<div class="question__acc-title">Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor incididunt?
-								</div>
-								<div class="question__acc-text">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-										suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-										lacus vel facilisis. </p>
-								</div>
-							</div>
-							<div class="question__acc-item">
-								<div class="question__acc-title">Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor incididunt?
-								</div>
-								<div class="question__acc-text">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-										suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-										lacus vel facilisis. </p>
-								</div>
-							</div>
-							<div class="question__acc-item">
-								<div class="question__acc-title">Lorem ipsum dolor sit amet, consectetur
-									adipiscing elit, sed do eiusmod tempor incididunt?
-								</div>
-								<div class="question__acc-text">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-										eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
-										suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
-										lacus vel facilisis. </p>
-								</div>
-							</div>
-						</div>
-						<div class="ajax-load-product">
-							<div class="ajax-load-product__button">
-								<button>Показать еще</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="question-form">
-			<div class="container">
-				<div class="question-form__row">
-					<form action="" class="question-form__form">
-						<div class="question-form__title">
-							Не нашли ответа на вопрос?
-						</div>
-						<div class="question-form__subtitle">
-							Задайте свой вопрос и мы ответим вам в ближайшее время
-						</div>
-						<div class="question-form__inputblock">
-							<input type="text" name="" id="" class="question-form__input"
-								placeholder="Ваше имя" required>
-							<input type="tel" name="" id="" class="question-form__input"
-								placeholder="Номер телефона" required>
-							<input type="email" name="" id="" class="question-form__input"
-								placeholder="E-mail" required>
-						</div>
-						<textarea name="" id="" cols="30" rows="10" class="question-form__area"
-							placeholder="Ваш вопрос..." required></textarea>
-						<input type="submit" value="Отправить вопрос">
-						<div class="question-form__pd">
-							<span>Нажимая на кнопку, вы соглашаетесь с обработкой <a href="">
-									персональных данных</a></span>
-						</div>
-					</form>
-				</div>
-			</div>
-		</section>
-		<section class="photo-slider">
-    <div class="photo-slider__column">
-        <div class="photo-slider__title">По следам наших мастеров: фоторепортаж</div>
-        <div id="photo-slider__start" class="photo-slider__row">
-            <div class="photo-slider__item">
-                <div class="photo-slider__img photo-slider__img_one">
-                    <img src="/img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png" alt="">
-                </div>
-                <div class="photo-slider__img photo-slider__img_two">
-                    <img src="/img/1c24608b-028f-4c31-8f89-473f4441f356.png" alt="">
+                    </div>
+                    <div id="topbar" class="seo-text__arrow"></div>
                 </div>
             </div>
-            <div class="photo-slider__item">
-                <div class="photo-slider__img photo-slider__img_one">
-                    <img src="/img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png" alt="">
-                </div>
-                <div class="photo-slider__img photo-slider__img_two">
-                    <img src="/img/1c24608b-028f-4c31-8f89-473f4441f356.png" alt="">
-                </div>
-            </div>
-            <div class="photo-slider__item">
-                <div class="photo-slider__img photo-slider__img_one">
-                    <img src="/img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png" alt="">
-                </div>
-                <div class="photo-slider__img photo-slider__img_two">
-                    <img src="/img/1c24608b-028f-4c31-8f89-473f4441f356.png" alt="">
-                </div>
-            </div>
-            <div class="photo-slider__item">
-                <div class="photo-slider__img photo-slider__img_one">
-                    <img src="/img/0f29bb2f-df54-4ef3-a0b2-6b8ebb43d44a.png" alt="">
-                </div>
-                <div class="photo-slider__img photo-slider__img_two">
-                    <img src="/img/1c24608b-028f-4c31-8f89-473f4441f356.png" alt="">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-		<section class="map">
-			<div class="container">
-				<div class="map__column">
-					<div class="map__title">Карта наших работ</div>
-					<div class="map__main">
-						<div style="position:relative;overflow:hidden;"><a
-								href="https://yandex.ru/maps?utm_medium=mapframe&utm_source=maps"
-								style="color:#eee;font-size:12px;position:absolute;top:0px;">Яндекс.Карты</a><a
-								href="https://yandex.ru/maps/geo/moskva/53166393/?ll=37.742861%2C55.703823&utm_medium=mapframe&utm_source=maps&z=9.63"
-								style="color:#eee;font-size:12px;position:absolute;top:14px;">Москва —
-								Яндекс.Карты</a><iframe
-								src="https://yandex.ru/map-widget/v1/-/CCU4qWG8LC" width="100%"
-								height="455" frameborder="1" allowfullscreen="true"
-								style="position:relative;"></iframe></div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="last-job">
-			<div class="container">
-				<div class="last-job__column">
-					<div class="last-job__title">Последние работы</div>
-					<div class="last-job__cards">
-						<div class="last-job__item">
-							<a href="">
-								<div class="last-job__img">
-									<img src="/img/img-cards.png" alt="">
-								</div>
-								<div class="last-job__name">
-									Обустройство скважины в городе
-								</div>
-								<div class="last-job__date">
-									<i class="fas fa-calendar-alt"></i>
-									<span>30/07/2020</span>
-								</div>
-							</a>
-						</div>
-						<div class="last-job__item">
-							<div class="last-job__img">
-								<img src="/img/img-cards.png" alt="">
-							</div>
-							<div class="last-job__name">
-								Обустройство скважины в городе
-							</div>
-							<div class="last-job__date">
-								<i class="fas fa-calendar-alt"></i>
-								<span>30/07/2020</span>
-							</div>
-						</div>
-						<div class="last-job__item">
-							<div class="last-job__img">
-								<img src="/img/img-cards.png" alt="">
-							</div>
-							<div class="last-job__name">
-								Обустройство скважины в городе
-							</div>
-							<div class="last-job__date">
-								<i class="fas fa-calendar-alt"></i>
-								<span>30/07/2020</span>
-							</div>
-						</div>
-						<div class="last-job__item">
-							<div class="last-job__img">
-								<img src="/img/img-cards.png" alt="">
-							</div>
-							<div class="last-job__name">
-								Обустройство скважины в городе
-							</div>
-							<div class="last-job__date">
-								<i class="fas fa-calendar-alt"></i>
-								<span>30/07/2020</span>
-							</div>
-						</div>
-					</div>
-					<div class="last-job__button"><button>Показать все</button></div>
-				</div>
-			</div>
-		</section>
-		<section class="licence">
-			<div class="container">
-				<div class="licence__column">
-					<div class="licence__title">
-						Лицензии и сертификаты
-					</div>
-					<div class="licence__list">
-						<div class="licence__item">
-							<img src="/img/licence__item-1.png" alt="">
-						</div>
-						<div class="licence__item">
-							<img src="/img/licence__item-2.png" alt="">
-						</div>
-						<div class="licence__item">
-							<img src="/img/licence__item-3.png" alt="">
-						</div>
-						<div class="licence__item">
-							<img src="/img/licence__item-4.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="blog">
-			<div class="container">
-				<div class="blog__column">
-					<div class="blog__title">
-						О водоснабжении доступным языком
-					</div>
-					<div class="blog__cards">
-						<div class="blog__item" style="background-image:
-							url('/img/remont_kanalizacii-1024x643.jpg')">
-							<div class="blog__name">МОНТАЖ, РЕМОНТ КАНАЛИЗАЦИИ: БЕСПЕРЕБОЙНАЯ
-								СИСТЕМА ОТ ПРОФЕССИОНАЛОВМОНТАЖ, РЕМОНТ КАНАЛИЗАЦИИ: БЕСПЕРЕБОЙНАЯ
-								СИСТЕМА ОТ ПРОФЕССИОНАЛОВ МОНТАЖ, РЕМОНТ КАНАЛИЗАЦИИ: БЕСПЕРЕБОЙНАЯ
-								СИСТЕМА ОТ ПРОФЕССИОНАЛОВ </div>
-							<div class="blog__button"><button>Подробнее</button></div>
-						</div>
-						<div class="blog__item" style="background-image:
-							url('/img/remont_kanalizacii-1024x643.jpg')">
-							<div class="blog__name">ШНЕКОВОЕ БУРЕНИЕ СКВАЖИН</div>
-							<div class="blog__button"><button>Подробнее</button></div>
-						</div>
-						<div class="blog__item" style="background-image:
-							url('/img/remont_kanalizacii-1024x643.jpg')">
-							<div class="blog__name">НЕОБХОДИМО ОБСЛЕДОВАНИЕ СКВАЖИНЫ:
-								ДЛЯ ЧЕГО НУЖНА ТЕЛЕИНСПЕКЦИЯ?</div>
-							<div class="blog__button"><button>Подробнее</button></div>
-						</div>
-						<div class="blog__item" style="background-image:
-							url('/img/remont_kanalizacii-1024x643.jpg')">
-							<div class="blog__name">УСТАНОВКА И ОБУСТРОЙСТВО КЕССОНА:
-								КОНТРОЛИРУЙТЕ ЧИСТОТУ ВАШЕЙ СКВАЖИНЫ!</div>
-							<div class="blog__button"><button>Подробнее</button></div>
-						</div>
-					</div>
-					<div class="ajax-load-product">
-						<div class="ajax-load-product__button">
-							<button>Показать еще</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="seo-text">
-			<div class="container">
-				<div class="seo-text__row">
-					<div class="seo-text__title">
-						Lorem ipsum dolor sit amet, consectetur
-					</div>
-					<div class="seo-text__text">
-						<p style="display:block;">Lorem ipsum dolor sit amet consectetur
-							adipisicing elit. Obcaecati rem
-							numquam iste, veniam quisquam consequatur beatae eius totam. Perferendis
-							aut quo aliquam quae, ipsa saepe dolore culpa beatae adipisci placeat!
-							Alias laudantium maiores itaque laboriosam, nemo ullam accusantium
-							numquam
-							ratione dolor quae labore non a inventore eos consectetur minima quos.
-							Voluptatibus laborum eaque eum repellat odio quam aperiam officia
-							placeat.
-							At, ea maxime dolores debitis accusamus pariatur vitae. Quasi totam
-							obcaecati inventore quaerat, saepe quisquam repellat molestias nemo,
-							reprehenderit similique enim earum, vero recusandae architecto explicabo
-							consequuntur officia. Autem, minima.
-							Cupiditate consectetur tempore rem repudiandae, inventore labore amet
-							voluptatem ad ipsa molestias tempora voluptas nam, earum soluta autem
-							molestiae libero voluptatibus asperiores esse nostrum repellat incidunt?
-							Officia non eligendi tempore?
-							Exercitationem porro eveniet vel? Tenetur nisi quidem voluptatum
-							blanditiis
-							facilis rem at corporis explicabo eaque, porro modi animi quisquam iusto
-							delectus sed ex a saepe qui aperiam aliquam? Aliquid, porro.
-							Obcaecati inventore iusto dolore quod beatae explicabo ipsa numquam minus
-							et sequi voluptatibus cupiditate reprehenderit ad nostrum, similique at
-							deleniti! Perspiciatis similique alias officiis cupiditate maiores
-							voluptatem temporibus nesciunt! Aperiam?
-							Libero voluptas omnis totam molestiae unde adipisci rem quo. Labore totam
-							quos cum harum quas quibusdam. Blanditiis voluptate excepturi,
-							reprehenderit possimus inventore optio dolorem consectetur? Eos
-							voluptatibus repellat nisi quidem.
-							Officiis in ut soluta quidem nihil exercitationem nulla quae dolorem eum
-							voluptas, quis similique possimus aliquid mollitia quisquam ea. At
-							reprehenderit accusantium quos doloremque voluptate id incidunt, aperiam
-							amet ad.
-							Ex numquam, similique praesentium esse, earum deserunt beatae doloribus
-							repellendus optio enim voluptatum mollitia distinctio neque eum quia a
-							corrupti, laboriosam quas nobis! Quasi, ullam eaque? Optio velit corporis
-							tempore.
-							At corrupti laboriosam ipsum possimus distinctio ea voluptatibus amet,
-							dolor voluptas minima quasi nobis! Harum a animi, necessitatibus numquam
-							laudantium, ea quos quia, cupiditate laboriosam facilis eos adipisci
-							eligendi illum.</p>
-
-					</div>
-					<div id="topbar" class="seo-text__arrow"></div>
-				</div>
-			</div>
-		</section>
-		<!-- global-footer -->
-		<footer>
-    <div class="footer">
-        <div class="container">
-            <div class="footer__row">
-                <div class="footer__column">
-                    <div class="footer__logo">
-                        <img src="/img/logo-vodosnab.png" alt="">
-                    </div>
-                    <div class="footer__desc">
-                        Область нашей специализации – чистка и обустройство
-                        скважин,
-                        бурение, ремонт и текущее обслуживание систем
-                        водоснабжения,
-                        канализации и дренажа
-                    </div>
-                    <div class="footer__social">
-                        <div class="footer__social-title">Присоединяйтесь к нам:</div>
-                        <div class="footer__social-icon">
-                            <a href=""><i class="cirle cirle_grey cirle_vk"></i></a>
-                            <a href=""><i class="cirle cirle_grey cirle_ok"></i></a>
-                            <a href=""><i class="cirle cirle_grey cirle_tw"></i></a>
-                            <a href=""><i class="cirle cirle_grey cirle_fb"></i></a>
+        </section>
+        <!-- global-footer -->
+        <footer>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer__row">
+                        <div class="footer__column">
+                            <div class="footer__logo">
+                                <img src="img/logo-vodosnab.png" alt="">
+                            </div>
+                            <div class="footer__desc">
+                                Область нашей специализации – чистка и
+                                обустройство
+                                скважин,
+                                бурение, ремонт и текущее обслуживание систем
+                                водоснабжения,
+                                канализации и дренажа
+                            </div>
+                            <div class="footer__social">
+                                <div class="footer__social-title">Присоединяйтесь
+                                    к нам:</div>
+                                <div class="footer__social-icon">
+                                    <a href=""><i class="cirle cirle_grey
+                                            cirle_vk"></i></a>
+                                    <a href=""><i class="cirle cirle_grey
+                                            cirle_ok"></i></a>
+                                    <a href=""><i class="cirle cirle_grey
+                                            cirle_tw"></i></a>
+                                    <a href=""><i class="cirle cirle_grey
+                                            cirle_fb"></i></a>
+                                </div>
+                            </div>
+                            <div class="footer__tel">
+                                <p>Телефоны:</p>
+                                <a href="tel:+79268903422"><img
+                                        src="img/icons8-call-24.png" alt="">+7
+                                    (926) 890 34 22</a>
+                                <a href="tel:89162695276"><img
+                                        src="img/icons8-call-24.png" alt=""> 8
+                                    (916) 269 52 76</a>
+                            </div>
+                            <div class="footer__loc">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><strong>ООО "ЛИМИШ"</strong> - Московская
+                                    обл, г. Долгопрудный, пр. Пацаева
+                                    7, корп 1</span>
+                            </div>
+                            <div class="footer__mail">
+                                <i class="fas fa-envelope"></i>
+                                <a href="mailto:infovodosnab@mail.ru">infovodosnab@mail.ru</a>
+                            </div>
+                            <div class="footer__time">
+                                <img src="img/icons8-square-clock-30.png"
+                                    alt="">
+                                <span><strong>с 9:00 - 21:00</strong> без
+                                    выходных</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="footer__tel">
-                        <p>Телефоны:</p>
-                        <a href="tel:+79268903422"><img src="/img/icons8-call-24.png" alt="">+7 (926) 890 34 22</a>
-                        <a href="tel:89162695276"><img src="/img/icons8-call-24.png" alt="">  8 (916) 269 52 76</a>
-                    </div>
-                    <div class="footer__loc">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span><strong>ООО "ЛИМИШ"</strong> - Московская
-                            обл, г. Долгопрудный, пр. Пацаева
-                            7, корп 1</span>
-                    </div>
-                    <div class="footer__mail">
-                        <i class="fas fa-envelope"></i>
-                        <a href="mailto:infovodosnab@mail.ru">infovodosnab@mail.ru</a>
-                    </div>
-                    <div class="footer__time">
-                        <img src="/img/icons8-square-clock-30.png" alt="">
-                        <span><strong>с 9:00 - 21:00</strong> без
-                            выходных</span>
-                    </div>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__widget">
-                        <div class="footer__widget-title">Бурения скважин</div>
-                        <div class="footer__widget-list">
-                            <ul>
-                                <li>Шнековое бурение скважин</li>
-                                <li>Стоимость бурения скважин на песок</li>
-                                <li>Бурение скважин на известняк</li>
-                                <li>Горизонтальное бурение скважины
-                                    на воду</li>
-                            </ul>
+                        <div class="footer__column">
+                            <div class="footer__widget">
+                                <div class="footer__widget-title">Бурения
+                                    скважин</div>
+                                <div class="footer__widget-list">
+                                    <ul>
+                                        <li>Шнековое бурение скважин</li>
+                                        <li>Стоимость бурения скважин на песок</li>
+                                        <li>Бурение скважин на известняк</li>
+                                        <li>Горизонтальное бурение скважины
+                                            на воду</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__widget">
+                                <div class="footer__widget-title">Чистка скважин</div>
+                                <div class="footer__widget-list">
+                                    <ul>
+                                        <li>Избавляем воду из скважины от железа</li>
+                                        <li>Избавляем воду из скважины от
+                                            кальция</li>
+                                        <li>Правила и способы избавления воды из
+                                            скважины от
+                                            сероводорода</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__widget">
+                                <div class="footer__widget-title">Ремонт скважин</div>
+                                <div class="footer__widget-list">
+                                    <ul>
+                                        <li>Реанимация скважин на воду</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__widget">
+                                <div class="footer__widget-title
+                                    footer__widget-title_apart">О нас</div>
+                                <p>Контакты</p>
+                                <p>Статьи</p>
+                                <p>Галерея</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="footer__widget">
-                        <div class="footer__widget-title">Чистка скважин</div>
-                        <div class="footer__widget-list">
-                            <ul>
-                                <li>Избавляем воду из скважины от железа</li>
-                                <li>Избавляем воду из скважины от кальция</li>
-                                <li>Правила и способы избавления воды из
-                                    скважины от
-                                    сероводорода</li>
-                            </ul>
+                        <div class="footer__column">
+                            <div class="footer__widget">
+                                <div class="footer__widget-title">Услуги</div>
+                                <div class="footer__widget-list">
+                                    <ul>
+                                        <li>Обустройство скважин</li>
+                                        <li>Видеодиагностика скважин</li>
+                                        <li>Замена скважинных насосов</li>
+                                        <li>Извлечения застрявших насосов</li>
+                                        <li>Монтаж канализации</li>
+                                        <li>Обустройство кессонов</li>
+                                        <li>Очистка скважин</li>
+                                        <li>Продажа погружных насосов</li>
+                                        <li>Промывка дренажной системы</li>
+                                        <li>Ремонт канализации</li>
+                                        <li>Ремонт скважин</li>
+                                        <li>Бурение скважин</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__widget">
+                                <div class="footer__widget-title">Цены</div>
+                            </div>
+                            <div class="footer__widget">
+                                <div class="footer__widget-link">
+                                    <a href="">Карта сайта</a>
+                                    <a href="">Пользовательское соглашение</a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="footer__widget">
-                        <div class="footer__widget-title">Ремонт скважин</div>
-                        <div class="footer__widget-list">
-                            <ul>
-                                <li>Реанимация скважин на воду</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__widget">
-                        <div class="footer__widget-title
-                            footer__widget-title_apart">О нас</div>
-                        <p>Контакты</p>
-                        <p>Статьи</p>
-                        <p>Галерея</p>
-                    </div>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__widget">
-                        <div class="footer__widget-title">Услуги</div>
-                        <div class="footer__widget-list">
-                            <ul>
-                                <li>Обустройство скважин</li>
-                                <li>Видеодиагностика скважин</li>
-                                <li>Замена скважинных насосов</li>
-                                <li>Извлечения застрявших насосов</li>
-                                <li>Монтаж канализации</li>
-                                <li>Обустройство кессонов</li>
-                                <li>Очистка скважин</li>
-                                <li>Продажа погружных насосов</li>
-                                <li>Промывка дренажной системы</li>
-                                <li>Ремонт канализации</li>
-                                <li>Ремонт скважин</li>
-                                <li>Бурение скважин</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__widget">
-                        <div class="footer__widget-title">Цены</div>
-                    </div>
-                    <div class="footer__widget">
-                        <div class="footer__widget-link">
-                            <a href="">Карта сайта</a>
-                            <a href="">Пользовательское соглашение</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="footer__column">
-                    <div class="footer__widget">
-                        <div class="footer__widget-title">География работы</div>
-                        <div class="footer__widget-list">
-                            <ul>
-                                <li>Балашихинский район</li>
-                                <li>Волоколамский район</li>
-                                <li>Дмитровский район</li>
-                                <li>Истринский район</li>
-                                <li>Клинский район</li>
-                                <li>Красногорский район</li>
-                                <li>Мытищинский район</li>
-                                <li>Наро-Фоминский район</li>
-                                <li>Одинцовский район</li>
-                                <li>Подольский район</li>
-                                <li>Пушкинский район</li>
-                                <li>Раменский район</li>
-                                <li>Сергиево–Посадский район</li>
-                                <li>Солнечногорский район</li>
-                                <li>Щелковский район</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="footer__widget">
-                        <div class="footer__widget-copy">
-                            Copyright © 2021 <br>
-                            Все права защищены
+                        <div class="footer__column">
+                            <div class="footer__widget">
+                                <div class="footer__widget-title">География
+                                    работы</div>
+                                <div class="footer__widget-list">
+                                    <ul>
+                                        <li>Балашихинский район</li>
+                                        <li>Волоколамский район</li>
+                                        <li>Дмитровский район</li>
+                                        <li>Истринский район</li>
+                                        <li>Клинский район</li>
+                                        <li>Красногорский район</li>
+                                        <li>Мытищинский район</li>
+                                        <li>Наро-Фоминский район</li>
+                                        <li>Одинцовский район</li>
+                                        <li>Подольский район</li>
+                                        <li>Пушкинский район</li>
+                                        <li>Раменский район</li>
+                                        <li>Сергиево–Посадский район</li>
+                                        <li>Солнечногорский район</li>
+                                        <li>Щелковский район</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footer__widget">
+                                <div class="footer__widget-copy">
+                                    Copyright © 2021 <br>
+                                    Все права защищены
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</footer>
-		<!-- /global-footer-->
-	</body>
-	<script
-		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
-	<script src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-	<script src="../js/main.js"></script>
-	<script>
+        </footer>
+        <!-- /global-footer-->
+    </body>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script
+        src="https://alexandrebuffet.fr/codepen/slider/slick-animation.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
 		
 jQuery('#slider-start').slick({
     dots: true,
