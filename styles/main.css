@@ -823,11 +823,11 @@ img {
 }
 
 .slider .slide-m-dots .slick-prev:before {
-  content: url(/img/left-arrow-m.png);
+  content: url(../img/left-arrow-m.png);
 }
 
 .slider .slide-m-dots .slick-next:before {
-  content: url(/img/right-arrow-m.png);
+  content: url(../img/right-arrow-m.png);
 }
 
 .slider .slide-m-dots .slick-dots li button:before {
@@ -1310,7 +1310,7 @@ img {
 .cost__img:hover::before {
   content: "";
   position: absolute;
-  background: url(/img/icons8-plus-100.png) no-repeat;
+  background: url(../img/icons8-plus-100.png) no-repeat;
   background-position: center center;
   left: 50%;
   top: 50%;
@@ -1382,7 +1382,7 @@ img {
 .cost__about-right ul li:before {
   position: absolute;
   content: "";
-  background-image: url("/img/icons8-ok-50.png");
+  background-image: url("../img/icons8-ok-50.png");
   background-size: 28px 28px;
   width: 28px;
   height: 28px;
@@ -1542,7 +1542,7 @@ img {
 }
 
 .calc {
-  background: url("/img/f2b3e7ba0600da759764afcbb9008f82.png") no-repeat;
+  background: url("../img/f2b3e7ba0600da759764afcbb9008f82.png") no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
@@ -1935,7 +1935,7 @@ img {
   font-size: 18px;
   font-weight: 600;
   text-align: left;
-  background: #fff url("/img/icons8-minus-50.png") 98% center no-repeat;
+  background: #fff url("../img/icons8-minus-50.png") 98% center no-repeat;
   background-size: 28px;
   cursor: pointer;
   z-index: 5;
@@ -1944,7 +1944,7 @@ img {
 
 .question__acc-title.ui-state-hover,
 .question__acc-title.ui-state-active {
-  background: #fff url("/img/icons8-plus-50ui.png") 98% center no-repeat;
+  background: #fff url("../img/icons8-plus-50ui.png") 98% center no-repeat;
 }
 
 .question__acc-text {
@@ -2144,7 +2144,7 @@ img {
 }
 
 .last-job {
-  background: url(/img/scale_1200.png) no-repeat fixed;
+  background: url(../img/scale_1200.png) no-repeat fixed;
   background-size: cover;
 }
 
@@ -2464,11 +2464,11 @@ img {
 }
 
 .slick-slider .slick-prev:before {
-  content: url(/img/left-arrow.png);
+  content: url(../img/left-arrow.png);
 }
 
 .slick-slider .slick-next:before {
-  content: url(/img/right-arrow.png);
+  content: url(../img/right-arrow.png);
 }
 
 .slick-slider .slick-dots li button:before {
@@ -2944,7 +2944,7 @@ header {
 .footer__social-icon .cirle_vk:before {
   position: absolute;
   content: '';
-  background: url("/img/vk.png") no-repeat;
+  background: url("../img/vk.png") no-repeat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2955,7 +2955,7 @@ header {
 .footer__social-icon .cirle_ok:before {
   position: absolute;
   content: '';
-  background: url("/img/ok_ico.png") no-repeat;
+  background: url("../img/ok_ico.png") no-repeat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2966,7 +2966,7 @@ header {
 .footer__social-icon .cirle_tw:before {
   position: absolute;
   content: '';
-  background: url("/img/twitter-3_icon-icons.com_50735.png") no-repeat;
+  background: url("../img/twitter-3_icon-icons.com_50735.png") no-repeat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -2977,7 +2977,7 @@ header {
 .footer__social-icon .cirle_fb:before {
   position: absolute;
   content: '';
-  background: url("/img/facebook.png") no-repeat;
+  background: url("../img/facebook.png") no-repeat;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -3777,12 +3777,12 @@ header {
   }
 
   .question__acc-title {
-    background: #fff url(/img/icons8-minus-50.png) 95% center no-repeat;
+    background: #fff url(../img/icons8-minus-50.png) 95% center no-repeat;
   }
 
   .question .question__acc-title.ui-state-hover,
   .question .question__acc-title.ui-state-active {
-    background: #fff url(/img/icons8-plus-50ui.png) 95% center no-repeat;
+    background: #fff url(../img/icons8-plus-50ui.png) 95% center no-repeat;
   }
 
   .question-form__title {
